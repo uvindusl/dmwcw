@@ -1,0 +1,35 @@
+form
+{
+    font-family: Arial, sans-serif;color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btnlogin
+{
+    background: linear-gradient(to right, #800080, #000000) ;
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border: none;
+}
+body
+{
+    padding-top: 150px;
+    background-image: url("images/image\ \(2\).png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body div 
+{
+    background-image: url("images/Untitled image (1).png");
+    background-size: 480px,680px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*filter: blur(5px);*/
+}

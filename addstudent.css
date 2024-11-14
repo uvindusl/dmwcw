@@ -2,5 +2,24 @@ body{
     background-image: url(images/addstudent.jpg);
     background-repeat: no-repeat;
     background-size: 1920px,1080px;
+    font-family: Arial, sans-serif ;
+    color: white;
+}
+div.dashboard{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: blue;
 
+}
+div.addstudent{
+    display: flex;
+    justify-content: center;
+}
+h1.lable{
+    text-align: center;
+}
+div.button{
+    position: absolute;
+    right: 20px;
 }

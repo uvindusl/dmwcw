@@ -34,10 +34,6 @@ body {
     width: 200px;
     margin-bottom: 20px;
 }
-.dash img {
-    width: 100px;
-    margin-left: 20px;
-}
 
 .sidebar ul {
     list-style: none;
@@ -51,7 +47,7 @@ body {
 .sidebar ul li a {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -70,10 +66,13 @@ body {
     backdrop-filter: blur(5px);
     flex-grow: 1;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login h1 {
-    margin-bottom: 30px;
+    margin-bottom: 700px;
     font-size: 36px;
 }
 
@@ -81,32 +80,30 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-}
-
-.form label {
-    margin: 10px 0 5px;
-    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .form input {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 1%;
+    background: transparent;
 }
 
 button {
-    padding: 15px;
-    font-size: 18px;
-    background-color: #007bff;
+    font-size: 19px;
+    background: linear-gradient(to right, #38a2d8, #0d34e9) ;
     color: white;
+    border-radius: 25px;
+    height: 60px;
+    width: 250px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
+    left: 200px;
 }

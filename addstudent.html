@@ -24,11 +24,13 @@
                     <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
                 <li><a href="#">
                     <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
+                
             </ul>
         </div>
         <div class="login">
             <h1>Add Student</h1>
-            <form class="form">
+            <form class="form" action="doinsert.php" method="post">
+
                 <label for="name">Student Name</label>
                 <input type="text" id="studentName" name="studentName">
 
@@ -44,7 +46,10 @@
                 <label for="contact">Contact</label>
                 <input type="tel" id="contact" name="contact">
 
-                <button type="submit">Add Student</button>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit" name="submit">Add Student</button>
             </form>
         </div>
     </div>

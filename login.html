@@ -8,14 +8,20 @@
     </head>
     <body>
         <div>        
-            <form>
+            <form action ="login.php" method = "POST">
                 <h1>Login-in</h1>
                 <h3>Welcome</h3>
-                Username <br><input type ="Text" name = "txtName"><br><br>
-                Password <br><input type ="password" name = "txtPassword"><br><br>
+
+                <label class="Username">Username</label> <br>
+                <input type ="Text" name = "txtName" class="txtName"><br><br>
+
+                <label class="password">Password</label> <br>
+                <input type ="password" name = "txtPassword" class="txtPassword"><br><br>
+
                 Student<input type = "radio" name = "user" value = "student">
                 Lecturere<input type = "radio" name = "user" value = "lecturer">
                 Admin<input type = "radio" name = "user" value = "admin">
+
                 <input type ="submit" name = "login" value = "Log in" class="btnlogin">
             </form>
     </div>

@@ -67,43 +67,56 @@ body {
     flex-grow: 1;
     padding: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
+    align-items: center;       
+    height: 100vh;             
+    flex-direction: column;   
 }
 
 .login h1 {
-    margin-bottom: 700px;
     font-size: 36px;
+    margin: 0;                 
+    text-align: center;        
 }
 
+
 .form {
+    padding: 50px;
     display: flex;
+    justify-content: center;  
+    align-items: center;       
+    height: 100vh;             
     flex-direction: column;
-    max-width: 400px;
-    height: 100%;
+    width: 700px;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+}
+
+.form label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    align-self: flex-start;
 }
 
 .form input {
     padding: 10px;
     font-size: 16px;
+    width: 600px;
     margin-bottom: 20px;
-    border-radius: 1%;
+    border-radius: 5px; 
+    border: 1px solid white;
+    color: white;
     background: transparent;
 }
 
 button {
     font-size: 19px;
-    background: linear-gradient(to right, #38a2d8, #0d34e9) ;
+    background: linear-gradient(to right, #38a2d8, #0d34e9);
     color: white;
     border-radius: 25px;
-    height: 60px;
-    width: 250px;
+    padding: 10px 30px;
+    width: 200px;
     border: none;
     cursor: pointer;
-    left: 200px;
+    align-self: flex-end;
+    margin-top: 40px;
 }

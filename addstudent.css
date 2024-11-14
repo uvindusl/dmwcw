@@ -1,25 +1,99 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: white;
+    display: flex;
+    height: 100vh;
+    margin: 0;
     background-image: url(images/addstudent.jpg);
     background-repeat: no-repeat;
     background-size: 1920px,1080px;
-    font-family: Arial, sans-serif ;
-    color: white;
 }
-div.dashboard{
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    background-color: blue;
 
-}
-div.addstudent{
+.container {
     display: flex;
-    justify-content: center;
+    width: 100%;
 }
-h1.lable{
+
+.sidebar {
+    background-color: #001f3f;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
     text-align: center;
 }
-div.button{
-    position: absolute;
-    right: 20px;
+
+.main-content {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    flex-grow: 1;
+    padding: 50px;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.form label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

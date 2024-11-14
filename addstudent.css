@@ -31,8 +31,12 @@ body {
 }
 
 .logo img {
-    width: 100px;
+    width: 200px;
     margin-bottom: 20px;
+}
+.dash img {
+    width: 100px;
+    margin-left: 20px;
 }
 
 .sidebar ul {
@@ -45,21 +49,30 @@ body {
 }
 
 .sidebar ul li a {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
     color: white;
+    text-decoration: none;
     font-size: 18px;
-    display: block;
-    text-align: center;
+    padding: 20px;
 }
 
-.main-content {
+.icon {
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.login {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     flex-grow: 1;
     padding: 50px;
 }
 
-.main-content h1 {
+.login h1 {
     margin-bottom: 30px;
     font-size: 36px;
 }

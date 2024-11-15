@@ -55,6 +55,9 @@
                             <td>{$row['SEmail']}</td>
                             <td>{$row['SContact']}</td>
                             <td>{$row['SGPA']}</td>
+                            <td>
+                                <a class="btn btn-info" href="update.php?id={$row['SID']}">Update</a>&nbsp;
+                        </td>
                         </tr>
             HTML;
                 }

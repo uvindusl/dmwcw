@@ -29,8 +29,8 @@
             $result = mysqli_query($conn, $sql);
             
             echo <<<HTML
-            <div class="table">
-                <table class="table centered" border="1">
+            <div class="table1">
+                <table class="table centered">
                     <thead>
                         <tr>
                             <th>SID</th>

@@ -81,6 +81,7 @@ body {
     margin: 0;
     height: 90px;
     color: white;
+    flex: 0 1 auto;
 }
 
 .table1 { 
@@ -114,13 +115,10 @@ table.centered th, table.centered td {
 }
 
 table.centered th {
-    background-color: #030303;
+    color: #08a2bc;
+    background-color: transparent;
 }
 
 table.centered td {
     color: white;
-}
-
-table.centered tr:nth-child(even) {
-    background-color: #f9f9f9;
 }

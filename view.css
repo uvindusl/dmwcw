@@ -13,7 +13,7 @@ body {
     margin: 0;
     background-image: url(images/addstudent.jpg);
     background-repeat: no-repeat;
-    background-size: 1920px,1080px;
+    background-size: cover;
 }
 
 .container {
@@ -28,6 +28,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed; 
+    height: 100vh; 
+    left: 0;
 }
 
 .logo img {
@@ -60,64 +63,76 @@ body {
     margin-right: 10px;
 }
 
-
 .login {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     flex-grow: 1;
     padding: 50px;
     display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100vh;             
-    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .login h1 {
-    font-size: 36px;
-    margin: 0;                 
-    text-align: center;        
-}
-
-
-.form {
-    padding: 50px;
-    display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100vh;             
-    flex-direction: column;
-    width: 700px;
+    font-size: 60px;
     margin: 0;
+    height: 90px;
+    color: white;
+    flex: 0 1 auto;
 }
 
-.form label {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    align-self: flex-start;
+.table1 { 
+    margin-bottom: 400px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;  
+    flex: 1 1 auto;  
 }
 
-.form input {
-    padding: 10px;
+
+table.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table.centered, table.centered th, table.centered td {
+    border: 1px solid white;
+}
+
+
+table.centered {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table.centered th, table.centered td {
+    padding: 30px;
+    text-align: left;
+}
+
+table.centered th {
+    color: #08a2bc;
+    background-color: transparent;
+}
+
+table.centered td {
+    color: white;
+}
+.button{
+    display: inline-block;
     font-size: 16px;
-    width: 600px;
-    margin-bottom: 20px;
+    color: #000000;
+    background-color: #08a2bc;
     border: none;
-    outline: none;
-    border-bottom: 2px solid #fff;
-    color: white;
-    background: transparent;
-}
-
-button {
-    font-size: 19px;
-    background: linear-gradient(to right, #38a2d8, #0d34e9);
-    color: white;
-    border-radius: 25px;
-    padding: 10px 30px;
-    width: 200px;
-    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    align-self: flex-end;
-    margin-top: 40px;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: rgb(255, 2, 2);
 }

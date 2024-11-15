@@ -8,8 +8,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1a1a2e;
     color: #ffffff;
+    background-image: url(images/WhatsApp\ Image\ 2024-11-15\ at\ 20.22.30_40227405.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
 }
-
 
 .content {
     max-width: 1200px;

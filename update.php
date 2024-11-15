@@ -36,16 +36,55 @@ if(isset($_POST['submit'])){
 ?>
 
 <html lang="en">
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="addstudent.css">
+</head>
 <body>
-    <h2>Edit Record</h2>
-    <form method="post" action="">
-        Student Name:<input type="text" id="StudentName" name="StudentName" value="<?php echo $sname; ?>"><br><br>
-        Age:<input type="number" id="Age" name="Age" value="<?php echo $sage; ?>"><br><br>
-        Address:<input type="text" id="Address" name="Address" value="<?php echo $saddress; ?>"><br><br>
-        Email:<input type="text" id="Email" name="Email" value="<?php echo $semail; ?>"><br><br>
-        Contact:<input type="text" id="Contact" name="Contact" value="<?php echo $scontact; ?>"><br><br>
-        <input type="submit" name="submit" value="Update">
-    </form>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <ul>
+                
+                <li><a href="#">
+                    <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                <li><a href="addstudent.html">
+                    <img src="images/student.png" alt="student" class="icon">Students</a></li>
+                <li><a href="#">
+                    <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
+                <li><a href="#">
+                    <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
+                <li><a href="#">
+                    <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
+                
+            </ul>
+        </div>
+        <div class="login">
+            <h1>Update</h1>
+            <form class="form" method="post" action="">
+
+                <label for="name">Student Name</label>
+                <input type="text" id="StudentName" name="StudentName"  value="<?php echo $sname; ?>">
+
+                <label for="age">Age</label>
+                <input type="number" id="Age" name="Age" value="<?php echo $sage; ?>">
+
+                <label for="email">Email</label>
+                <input type="email" id="Email" name="Email"  value="<?php echo $semail; ?>">
+
+                <label for="address">Address</label>
+                <input type="text" id="Address" name="Address"  value="<?php echo $saddress; ?>">
+
+                <label for="contact">Contact</label>
+                <input type="tel" id="Contact" name="Contact" value="<?php echo $scontact; ?>">
+
+                <button type="submit" name="submit">Update</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-include "config.php";
+include "conf.php";
 
 if(isset($_GET['id'])){
     $s_id = $_GET['id'];
@@ -10,7 +10,7 @@ if(isset($_GET['id'])){
         $result = mysqli_query($conn, $sql);
 
         if($result == TRUE) {
-            header("Location: view.php");
+            header("Location: viewStudent.php");
         }
         else{
             echo "Error:" . $sql . "<br>" . mysqli_error($conn);

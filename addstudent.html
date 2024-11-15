@@ -16,20 +16,18 @@
                 
                 <li><a href="dashbord.html">
                     <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="addstudent.html">
+                <li><a href="viewStudent.php">
                     <img src="images/student.png" alt="student" class="icon">Students</a></li>
                 <li><a href="AddLecture.html">
                     <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="module.html">
-                    <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
-                <li><a href="#">
-                    <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
+                <li><a href="addModule.html">
+                    <img src="images/course.png" alt="Courses" class="icon">Module</a></li>
                 
             </ul>
         </div>
         <div class="login">
             <h1>Add Student</h1>
-            <form class="form" id="addStudentForm" onsubmit="return DoValidate()" action="doinsert.php" method="post">
+            <form class="form" id="addStudentForm" onsubmit="return DoValidate()" action="addStudent.php" method="post">
 
                 <label for="name">Student Name</label>
                 <input type="text" id="studentName" name="studentName">

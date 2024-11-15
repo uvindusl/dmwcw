@@ -1,6 +1,6 @@
 <?php
 
-include "config.php";
+include "conf.php";
 
 if(isset($_POST['submit'])) {
     $sname = $_POST['studentName'];

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Delete Student</title>
-    <link rel="stylesheet" href="up&delete.css">
+    <link rel="stylesheet" href="view.css">
 </head>
 <body>
 <div class="container">

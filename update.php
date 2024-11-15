@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
     $update_sql = "UPDATE student SET  SName='$new_sname' , SAge='$new_sage' , SAddress='$new_saddress' , SEmail='$new_semail' , SContact='$new_scontact' WHERE SID='$id'";
 
     if(mysqli_query($conn, $update_sql)) {
-		header("Location: view.php");
+		header("Location: php/view.php");
 
     } else {
         echo "Error updating record: " . mysqli_error($conn);

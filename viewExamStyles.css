@@ -1,6 +1,14 @@
-body
+.Exam
 {
     background-image: url(Images/bla.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Gpa
+{
+    background-image: url(Images/pngtree-smooth-gradient-chaotic-light-texture-on-abstract-dark-background-image_13890588.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;

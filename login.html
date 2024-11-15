@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Login</title>
+        <link rel="StyleSheet" type="text/css" href="style1.css">
+
+      <script type="text/javascript" src ="validate.js"></script>
+
+    </head>
+    <body>
+        <div>        
+            <form action ="login.php" name="loginForm" method = "POST" onsubmit="return validation()">
+                <h1>Log-in</h1>
+                <h3>Welcome</h3>
+
+                <label class="Username">Username</label> <br>
+                <input type ="Text" name = "txtName" class="txtName"><br><br>
+
+                <label class="password">Password</label> <br>
+                <input type ="password" name = "txtPassword" class="txtPassword"><br><br>
+
+                <label class="student">Student</label>
+                <input type = "radio" name = "user" value = "student">
+
+                <label class="lecturer">Lecturer</label>
+                <input type = "radio" name = "user" value = "lecturer">
+                
+                <label class="admin">Admin</label>
+                <input type = "radio" name = "user" value = "admin">
+
+                <input type ="submit" name = "login" value = "Log in" class="btnlogin">
+            </form>
+    </div>
+    </body>
+</html>

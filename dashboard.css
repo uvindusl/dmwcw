@@ -21,12 +21,17 @@ header {
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 14px;
+}
+
+.logo img {
+    width: 60px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    margin-top: 60px;
 }
 
 nav ul li {
@@ -37,7 +42,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 20px 25px;
 }
 
 nav ul li a:hover {

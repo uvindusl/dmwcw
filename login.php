@@ -33,7 +33,7 @@
         if (mysqli_num_rows($results) > 0)
         {
             //echo "Login Succesful";
-            header("Location: viewExams.html");
+            header("Location: viewExam.php");
         }
         else
         {

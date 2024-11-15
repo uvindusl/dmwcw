@@ -8,6 +8,14 @@ form
     padding-right: 100px;
 }
 
+form input
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+}
+
 .btnlogin
 {
     background: linear-gradient(to right, #800080, #000000) ;
@@ -30,30 +38,10 @@ form
     padding-right: 95px;
 }
 
-.txtName
-{
-    background: transparent;
-    border-bottom: 2px solid;
-    border-color: white;
-    border-top: none;
-    border-left: none ;
-    border-right: none;
-}
-
 .password
 {
     color: #000000;
     padding-right: 95px;
-}
-
-.txtPassword
-{
-    background: transparent;
-    border-bottom: 2px solid;
-    border-color: white;
-    border-top: none;
-    border-left: none ;
-    border-right: none;
 }
 
 .admin

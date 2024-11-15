@@ -19,6 +19,9 @@
                     <li><a href="viewGpa.php#">
                         <img src="images/download.png" alt="gpa" class="icon">GPA</a>
                     </li> 
+                    <li><a href="login.html#">
+                        <img src="images/download.png" alt="gpa" class="icon">log out</a>
+                    </li> 
                 </ul>
         </div>
         <div class="view">

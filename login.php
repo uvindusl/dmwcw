@@ -15,7 +15,7 @@
         if (mysqli_num_rows($results) > 0)
         {
             //echo "Login Succesful";
-            header("Location: dashbord.html");
+            header("Location: dashboardadmin.html");
         }
         else
         {
@@ -33,7 +33,7 @@
         if (mysqli_num_rows($results) > 0)
         {
             //echo "Login Succesful";
-            header("Location: viewExam.php");
+            header("Location: dashboardstudent.html");
         }
         else
         {
@@ -51,7 +51,7 @@
         if (mysqli_num_rows($results) > 0)
         {
             //echo "Login Succesful";
-            header("Location: viewmodule.php");
+            header("Location: dashboardlecuters.html");
         }
         else
         {

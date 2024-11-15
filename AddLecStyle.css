@@ -12,7 +12,7 @@ body{
     margin: 0;
     background-image: url(AddLecimages/hq720.jpg);
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
     
     
 }
@@ -46,7 +46,7 @@ body{
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 0px;
+    padding: 10px;
 }
 .icon {
     width: 50px; 
@@ -62,7 +62,7 @@ body{
     display: flex;
     justify-content: center;  
     align-items: center;       
-    height: 100%;             
+    height: 100vh;             
     flex-direction: column;   
     overflow: hidden;
 }
@@ -94,7 +94,7 @@ body{
     padding: 8px;
     font-size: 16px;
     width: 600px;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
     border-radius: 5px; 
     border: 1px solid white;
     color: white;
@@ -111,5 +111,5 @@ button {
     border: none;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: 40px;
+    margin-top: 20px;
 }

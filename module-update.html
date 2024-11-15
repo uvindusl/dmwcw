@@ -3,11 +3,11 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title> Add Modules </title>
+        <title> Update Modules </title>
         <link rel = "stylesheet" href = "addModuleStyle.css">
         <script type = "text/javascript" src = "addModule.js"></script>
     </head>
-    <body>
+    <body style="background-image: url('Images/bgimg.webp'); background-size: cover; background-position: center;">
         <div class = "sidebar">
             <img src = "Images/Untitled_design__2_-removebg-preview.png" width="100px">
             <nav>
@@ -21,14 +21,16 @@
         </div>
 
         <div class = "content">
-            <h1> Add Module </h1>
+            <h1> Update Module </h1>
             <div class = "fill">
-            <form class = "module-form" id = "module-form" method="post" action="addModule.php" onsubmit="return Validate()">
+            <form class = "module-form" id = "module-form" method="post" action="module-update.php" onsubmit="return Validate()">
+                    <label for="module-id">Module ID</label></br>
+                    <input type="text" id="module-id" name="module-id"></br></br>
                     <label for="module-name">Module Name</label></br>
                     <input type="text" id="module-name" name="module-name"></br></br>
                     <label for="description">Description</label></br>
                     <input type="text" id="description" name="description"></br></br>
-                <button type = "submit">Add Module</button>
+                <button type = "submit">Update Module</button>
             </form>
             </div>
         </div>

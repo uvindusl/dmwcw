@@ -51,7 +51,7 @@
         if (mysqli_num_rows($results) > 0)
         {
             //echo "Login Succesful";
-            header("Location: addModule.html");
+            header("Location: viewmodule.php");
         }
         else
         {

@@ -10,14 +10,14 @@
 <div class="container">
         <div class="sidebar">
             <div class="logo">
-                <img src="images/logo1.png" alt="Logo">
+                <img src="images/logo.png" alt="Logo">
             </div>
             <ul>
                 <li><a href="addstudent.html#"><img src="" alt="exam" class="icon">add Students</a></li>
                 <li><a href="dashbord.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
                 <li><a href="#"><img src="images/student.png" alt="student" class="icon">Students</a></li>
                 <li><a href="#"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="addModule.html#"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>              
+                <li><a href="viewmodule.php#"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>              
             </ul>
         </div>
         <div class="login">

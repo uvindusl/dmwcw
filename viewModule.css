@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    background-image: url(Images/bgimg.webp);
+    background-size: cover;
+}
+.sidebar
+{
+    width: 200px;
+    height: 100vh;
+    background-color:#390c57;
+    color: #ffff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar nav ul
+{
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li
+{
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li img
+{
+    width: 25px;
+    height: 25px;
+    margin-right: 14px;
+}
+
+.sidebar nav ul li a
+{
+    padding-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover
+{
+    color: rgb(0, 250, 229);
+}
+
+.content
+{
+    margin-left: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+.table1 { 
+    margin-top: 50px;
+    margin-bottom: 350px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;  
+    flex: 1 1 auto;  
+}
+
+table.centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+
+table.centered, table.centered th, table.centered td {
+    border: 1px solid white;
+}
+
+
+table.centered th, table.centered td {
+    padding: 30px;
+    text-align: left;
+}
+
+table.centered th {
+    background-color: midnightblue;
+}
+
+table.centered td {
+    color: white;
+}
+
+table.centered td.actions {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.update-btn {
+    background-image: linear-gradient(to right, green, rgba(26, 255, 0, 0.71));
+}
+
+.delete-btn {
+    background-image: linear-gradient(to right, red, rgb(181, 32, 32));
+}

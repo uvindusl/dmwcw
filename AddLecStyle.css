@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: white;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    background-image: url(AddLecimages/hq720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+    
+    
+}
+.page{
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    background-color: #001f3f;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lotus img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+.sidebar ul li {
+    margin: 20px 0;
+}
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px;
+}
+.icon {
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
+}
+
+.pagebody {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    flex-grow: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    height: 100%;             
+    flex-direction: column;   
+    overflow: hidden;
+}
+.pagebody h1 {
+    font-size: 36px;
+    margin: 0; 
+    
+    padding-top: 0.1cm;                
+    text-align: center;        
+}
+.lecdetails {
+    padding-top: 0.5cm;
+    padding: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    height: 100%;             
+    flex-direction: column;
+    width: 700px;
+    margin: 0;
+}
+.lecdetails label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+.lecdetails input {
+    padding: 8px;
+    font-size: 16px;
+    width: 600px;
+    margin-bottom: 3px;
+    border-radius: 5px; 
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+
+button {
+    font-size: 19px;
+    background: linear-gradient(to right, #fb48fe, #7c08e1);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 10px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 40px;
+}

@@ -3,13 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Login</title>
         <link rel="StyleSheet" type="text/css" href="style.css">
+
+      <script type="text/javascript" src ="validate.js"></script>
+
     </head>
     <body>
         <div>        
-            <form action ="login.php" method = "POST">
-                <h1>Login-in</h1>
+            <form action ="login.php" name="loginForm" method = "POST" onsubmit="return validation()">
+                <h1>Log-in</h1>
                 <h3>Welcome</h3>
 
                 <label class="Username">Username</label> <br>
@@ -18,9 +22,14 @@
                 <label class="password">Password</label> <br>
                 <input type ="password" name = "txtPassword" class="txtPassword"><br><br>
 
-                Student<input type = "radio" name = "user" value = "student">
-                Lecturere<input type = "radio" name = "user" value = "lecturer">
-                Admin<input type = "radio" name = "user" value = "admin">
+                <label class="student">Student</label>
+                <input type = "radio" name = "user" value = "student">
+
+                <label class="lecturer">Lecturer</label>
+                <input type = "radio" name = "user" value = "lecturer">
+                
+                <label class="admin">Admin</label>
+                <input type = "radio" name = "user" value = "admin">
 
                 <input type ="submit" name = "login" value = "Log in" class="btnlogin">
             </form>

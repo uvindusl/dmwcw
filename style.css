@@ -16,6 +16,13 @@ form
     height: 30px;
     width: 100px;
     border: none;
+    transition: background-color 1.0s ease, transform 0.5s ease;
+}
+.btnlogin:hover
+{
+    background: linear-gradient(to right, #ff0000, #b700ff) ;
+    transform: scale(1.05);
+
 }
 
 .Username
@@ -26,6 +33,11 @@ form
 .txtName
 {
     background: transparent;
+    border-bottom: 2px solid;
+    border-color: white;
+    border-top: none;
+    border-left: none ;
+    border-right: none;
 }
 
 .password
@@ -37,6 +49,21 @@ form
 .txtPassword
 {
     background: transparent;
+    border-bottom: 2px solid;
+    border-color: white;
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+}
+
+.admin
+{
+    color: black;
+}
+
+.lecturer
+{
+    color:#000000;
 }
 
 body

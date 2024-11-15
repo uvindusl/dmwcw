@@ -1,0 +1,71 @@
+form
+{
+    font-family: Arial, sans-serif;color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+form input
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+}
+
+.btnlogin
+{
+    background: linear-gradient(to right, #800080, #000000) ;
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    transition: background-color 1.0s ease, transform 0.5s ease;
+}
+.btnlogin:hover
+{
+    background: linear-gradient(to right, #ff0000, #b700ff) ;
+    transform: scale(1.05);
+
+}
+
+.Username
+{
+    padding-right: 95px;
+}
+
+.password
+{
+    color: #000000;
+    padding-right: 95px;
+}
+
+.admin
+{
+    color: black;
+}
+
+.lecturer
+{
+    color:#000000;
+}
+
+body
+{
+    padding-top: 150px;
+    background-image: url("images/imageback.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body div 
+{
+    background-image: url("images/Untitled image (1).png");
+    background-size: 480px,680px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

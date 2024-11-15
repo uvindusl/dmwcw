@@ -1,0 +1,124 @@
+.Exam
+{
+    background-image: url(Images/bla.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Gpa
+{
+    background-image: url(Images/pngtree-smooth-gradient-chaotic-light-texture-on-abstract-dark-background-image_13890588.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container 
+{
+    display: flex;
+    width: 100%;
+}
+
+.sidebar 
+{
+    background-color: #001f3f;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img 
+{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul 
+{
+    list-style: none;
+    width: 100%;
+    padding-right: 100px;
+
+}
+
+.sidebar ul li 
+{
+    margin: 20px 0;
+}
+
+.sidebar ul li a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.icon 
+{
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
+}
+
+.view
+{
+    align-items: center;
+}
+
+.view h1
+{
+    text-align: center;
+    color: white;
+    padding-left: 50px;
+}
+
+.table1 { 
+    margin-bottom: 400px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;  
+    flex: 1 1 auto;  
+
+    padding-left: 50px;
+}
+
+
+table.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table.centered, table.centered th, table.centered td {
+    border: 1px solid white;
+}
+
+
+table.centered {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table.centered th, table.centered td {
+    padding: 30px;
+    text-align: left;
+    width: 1000px;
+
+}
+
+table.centered th {
+    color: hwb(0 100% 0%);
+}
+
+table.centered td {
+    color: rgb(255, 255, 255);
+}
+

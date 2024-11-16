@@ -14,6 +14,7 @@ body {
     background-image: url(images/addstudent.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: auto; 
 }
 
 .container {
@@ -64,13 +65,13 @@ body {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     flex-grow: 1;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    overflow-y: auto; /* Add scrolling */
+    overflow-y: auto; 
 }
 
 .login h1 {
@@ -81,21 +82,25 @@ body {
 }
 
 .form {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     width: 100%; /* Ensure the form uses available width */
     max-width: 700px; /* Limit the maximum width */
-    overflow-y: auto; /* Add scrolling to the form */
+    overflow-y: auto;
+
 }
 
 .form label {
-    margin: 10px 0 5px;
+    display: block;
     font-size: 18px;
-    align-self: flex-start;
+    color: white;
+    margin-bottom: 5px;
+    min-height: 20px; /* Ensures the label has enough space */
 }
+
 
 .form input {
     padding: 10px;

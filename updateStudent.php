@@ -1,6 +1,6 @@
 <?php
 
-include "conf.php";
+include "config.php";
 
 $id = $_GET['id'];
 
@@ -50,16 +50,12 @@ if(isset($_POST['submit'])){
             </div>
             <ul>
                 
-                <li><a href="#">
+                <li><a href="dashboardadmin.html">
                     <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
                 <li><a href="addstudent.html">
                     <img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="#">
+                <li><a href="AddLecture.html">
                     <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="#">
-                    <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
-                <li><a href="#">
-                    <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
                 
             </ul>
         </div>

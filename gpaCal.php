@@ -3,7 +3,8 @@
     <head>
         <title>Calculate Gpa</title>
         <link rel="StyleSheet" href="gpaCal.css">
-            <script> // JavaScript function to calculate the grade 
+            <script> 
+
                 function calcGrade()
                 {
                     var marks = document.getElementById('Marks').value;
@@ -72,15 +73,39 @@
                     }
 
                     document.getElementById('Grade').innerHTML = grade;
-                    document.getElementById('GradeInput').value = grade; // Update hidden input
+                    document.getElementById('GradeInput').value = grade; 
+                    
+                    document.getElementById('Points').innerHTML = points;
+                    document.getElementById('PointsInput').value = points;// Update hidden input      
 
                     return true;
-                } // Event listener to update grade when marks change
+                } 
+
+                function addToTable()
+                {
+                    var module = document.getElementById('Module').value;
+                    var marks = document.getElementById('Marks').value;
+                    var grade = document.getElementById('GradeInput').value;
+                    var points = document.getElementById('PointsInput').value;
+
+                    var table = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+                    var newRow = table.insertRow();
+
+                    newRow.insertCell(0).innerHTML = module;
+                    newRow.insertCell(1).innerHTML = marks;
+                    newRow.insertCell(2).innerHTML = grade;
+                    newRow.insertCell(3).innerHTML = points;
+
+                    return false;
+
+                }
                 
                 document.addEventListener('DOMContentLoaded',function()                 
                 {
-                    document.getElementById('Marks').addEventListener('input', calcGrade); 
+                    document.getElementById('Marks').addEventListener('input', calcGrade);
+                    document.getElementById('Points').addEventListener('input', calcGrade); 
                 });
+
             </script>
     </head>
     <body>
@@ -98,7 +123,7 @@
                 </ul>
             </div>
             <div class="form">
-                <h1>Calculate Student Gpa</h1>
+                <h1>Calculate Student GPA</h1>
                 <?php
 
                     include "conf.php";
@@ -159,16 +184,54 @@
                        
 
                         <label for="Grade">Grade</label>
-                        <output id="Grade" name="Grade"></output><br><br>
+                        <output id="Grade" name="Grade"></output>
                         <input type="hidden" id="GradeInput" name="GradeInput"><br><br>
 
-                        <button type = "submit">Add Grades</button>
+                        <label for="Points">Points</label>
+                        <output id="Points" name="Points"></output>
+                        <input type="hidden" id="PointsInput" name="PointsInput"><br><br>
+
+                        <button type="button" onclick="addToTable()">Add to Table</button>
+                        <button type = "submit">Submit to Database</button>
 
                     </form>
 
                     HTML;
+                    echo <<<HTML
+                    <div class="tableDiv">
+                        <table id="dataTable" calss="table">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Marks</th>
+                                    <th>Grade</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    HTML;
+                            if ($_SERVER["REQUEST_METHOD"] == "POST")
+                            {                   
+                            $module = $_POST['Module'];
+                            $marks = $_POST['Marks'];
+                            $grade = $_POST['GradeInput'];   
+                            $points = $_POST['PointsInput'];
 
-
+                            echo <<<HTML
+                                    <tr>
+                                        <td>$module</td>
+                                        <td>$marks</td>
+                                        <td>$grade</td>
+                                        <td>$points</td>
+                                    </tr>
+                            HTML;
+                            }
+                            echo <<<HTML
+                            </tbody>
+                        </table>
+                    </div>
+                    HTML;
+                    
                 ?>    
             </div>
         </div>

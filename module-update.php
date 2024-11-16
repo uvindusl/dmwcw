@@ -4,7 +4,7 @@ $sname = "localhost";
 $uname = "root";
 $pass = "";
 $dbname = "dmw_cw";
-$conn = mysqli_connect($sname, $uname, $pass, $dbname, 3307);
+$conn = mysqli_connect($sname, $uname, $pass, $dbname);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -45,7 +45,7 @@ if ($module_id > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Modules</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="module-update.css">
     <script type="text/javascript" src="module.js"></script>
 </head>
 <body style="background-image: url('Images/bgimg.webp'); background-size: cover; background-position: center;">

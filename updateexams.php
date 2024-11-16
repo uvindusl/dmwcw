@@ -17,11 +17,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $exam_time = $_POST['exam-time'];
     $mid = intval($_POST['MID']);
 
-    $sql = "UPDATE exam SET ExamName = '$exam_name', ExamDate = '$exam_date', ExamTime = '$exam_time', MID = '$mid' WHERE ExamID = $exam_id";
-    if (mysqli_query($conn, $sql)) {
-        header("Location: viewexams.php");
-    } else {
-        echo "<p style='color:red;'>Error updating exam: " . mysqli_error($conn) . "</p>";
+    $check = "SELECT MID FROM module WHERE MID = '$mid'";
+    $result = mysqli_query($conn, $check);
+
+    if(mysqli_num_rows($result) > 0)
+    {
+        $sql = "UPDATE exam SET ExamName = '$exam_name', ExamDate = '$exam_date', ExamTime = '$exam_time', MID = '$mid' WHERE ExamID = $exam_id";
+        if (mysqli_query($conn, $sql)) 
+        {
+            header("Location: viewexams.php");
+            exit();
+        }
+        else 
+        {
+            echo "<script>alert('Error: Cannot update exam');</script>";
+        }
+    }
+    else 
+    {
+        echo "<script>alert('Error: The MID does not exist.');</script>";
     }
 }
 
@@ -61,8 +75,8 @@ if ($exam_id > 0) {
             <ul>
                 <li><a href=""><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
                 <li><a href=""><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                <li><a href=""><img src="Images/download-removebg-preview (6) (1).png"> Lecturer </a></li>
-                <li><a href=""><img src="Images/c.png"> Courses </a></li>
+                <li><a href="addexams.html"><img src="Images/images-removebg-preview (3) (1)"> Exams </a></li>
+                <li><a href="addmodule.html"><img src="Images/c.png"> Modules </a></li>
             </ul>
         </nav>
     </div>

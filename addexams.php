@@ -16,13 +16,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $exam_time = $_POST['exam-time'];
     $mid = $_POST['mid'];
 
-    $sql = "INSERT INTO exam (ExamName, ExamDate, ExamTime, MID) VALUES ('$exam_name', '$exam_date', '$exam_time', '$mid')";
+    $check = "SELECT MID FROM module WHERE MID = '$mid'";
+    $result = mysqli_query($conn, $check);
 
-    if (mysqli_query($conn, $sql)) {
-        header("Location: viewexams.php");
-    } else {
-        echo "<p style='color:red;'>Error: " . mysqli_error($conn) . "</p>";
+    if(mysqli_num_rows($result) > 0)
+    {
+        $sql = "INSERT INTO exam (ExamName, ExamDate, ExamTime, MID) VALUES ('$exam_name', '$exam_date', '$exam_time', '$mid')";
+        if (mysqli_query($conn, $sql)) 
+        {
+            header("Location: viewexams.php");
+            exit();
+        }
+        else 
+        {
+            echo "<script>alert('Error: Cannot insert exam');</script>";
+        }
     }
+    else 
+    {
+        echo "<script>alert('Error: The MID does not exist.');</script>";
+    }
+   
 }
 
 mysqli_close($conn);

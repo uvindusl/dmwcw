@@ -1,30 +1,30 @@
 <?php
 
-include "conf.php";
+include "config3.php";
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM student WHERE SID='$id'";
+$sql = "SELECT * FROM lecturer WHERE SID='$id'";
 $result = mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($result) == 1)
 {
     $row = mysqli_fetch_assoc($result);
-    $sname = $row['SID'];
-    $sage = $row['SAge'];
-    $semail = $row['SEmail'];
-    $saddress = $row['SAddress'];
-    $scontact = $row['SContact'];
+    $lname = $row['LName'];
+    $email = $row['LEmail'];
+    $contactno = $row['LPhoneNum'];
+    $saddress = $row['LAddress'];
+    
 }
 
 if(isset($_POST['submit'])){
-    $new_sname = $_POST['StudentName'];
-    $new_sage = $_POST['Age'];
-    $new_semail = $_POST['Email'];
-    $new_saddress = $_POST['Address'];
-    $new_scontact = $_POST['Contact'];
+    $new_lname = $_POST['LName'];
+    $new_contactno = $_POST['PhoneNum'];
+    $new_lemail = $_POST['Email'];
+    $new_laddress = $_POST['Address'];
+    
 
-    $update_sql = "UPDATE student SET  SName='$new_sname' , SAge='$new_sage' , SAddress='$new_saddress' , SEmail='$new_semail' , SContact='$new_scontact' WHERE SID='$id'";
+    $update_sql = "UPDATE lecturer SET  LName='$new_lname' , PhoneNum='$new_sage' , SAddress='$new_saddress' , SEmail='$new_semail' , SContact='$new_scontact' WHERE SID='$id'";
 
     if(mysqli_query($conn, $update_sql)) {
 		header("Location: viewStudent.php");
@@ -68,19 +68,18 @@ if(isset($_POST['submit'])){
             <form class="form" method="post" action="">
 
                 <label for="name">Student Name</label>
-                <input type="text" id="StudentName" name="StudentName"  value="<?php echo $sname; ?>">
+                <input type="text" id="LName" name="LName"  value="<?php echo $lname; ?>">
 
-                <label for="age">Age</label>
-                <input type="number" id="Age" name="Age" value="<?php echo $sage; ?>">
+                <label for="contactno">Contact no</label>
+                <input type="number" id="PhoneNum" name="PhoneNum" value="<?php echo $contactno; ?>">
 
                 <label for="email">Email</label>
-                <input type="email" id="Email" name="Email"  value="<?php echo $semail; ?>">
+                <input type="email" id="Email" name="Email"  value="<?php echo $email; ?>">
 
                 <label for="address">Address</label>
                 <input type="text" id="Address" name="Address"  value="<?php echo $saddress; ?>">
 
-                <label for="contact">Contact</label>
-                <input type="tel" id="Contact" name="Contact" value="<?php echo $scontact; ?>">
+               
 
                 <button type="submit" name="submit">Update</button>
             </form>

@@ -54,8 +54,8 @@
                             <td>{$row['LAddress']}</td>
                             
                             <td>
-                                <a class="button" href="updateStudent.php?id={$row['LID']}">Update</a>&nbsp;
-                                <a class="button" href="deleteStudent.php?id={$row['LID']}">Delete</a>
+                                <a class="button" href="updateLecturer.php?id={$row['LID']}">Update</a>&nbsp;
+                                <a class="button" href="DeleteLecture.php?id={$row['LID']}">Delete</a>
                             </td>
                         </tr>
             HTML;

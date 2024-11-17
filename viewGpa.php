@@ -13,6 +13,8 @@
             <img src="images/logo.png" alt="Logo">
                 </div>
                 <ul>
+                    <li><a href="dashboardstudent.html">
+                        <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
                     <li><a href="viewExam.php">
                         <img src="Images/exams.png" alt="exam" class="icon">Exams</a>
                     </li>  

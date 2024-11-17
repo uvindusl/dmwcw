@@ -159,7 +159,7 @@
                 $sql = "SELECT SName FROM student";
                 $result = mysqli_query($conn, $sql);
 
-                $sql1 = "SELECT MName FROM module";
+                $sql1 = "SELECT ExamName FROM exam";
                 $result1 = mysqli_query($conn, $sql1);
             ?>
             <form class="form1" action="addMarksGrade.php" method="POST" onsubmit="prepareTableData()">
@@ -182,7 +182,7 @@
                     if (mysqli_num_rows($result1) > 0) 
                     {
                         while ($row = mysqli_fetch_assoc($result1)) {
-                            echo "<option>{$row['MName']}</option>";
+                            echo "<option>{$row['ExamName']}</option>";
                         }
                     }
                     ?>

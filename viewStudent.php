@@ -39,7 +39,6 @@
                             <th>SAddress</th>
                             <th>SEmail</th>
                             <th>SContact</th>
-                            <th>SGPA</th>
                         </tr>
                     </thead>
                     <tbody> 
@@ -54,7 +53,6 @@
                             <td>{$row['SAddress']}</td>
                             <td>{$row['SEmail']}</td>
                             <td>{$row['SContact']}</td>
-                            <td>{$row['SGPA']}</td>
                             <td>
                                 <a class="button" href="updateStudent.php?id={$row['SID']}">Update</a>&nbsp;
                                 <a class="button" href="deleteStudent.php?id={$row['SID']}">Delete</a>

@@ -44,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                         <th>ExamName</th>
                         <th>ExamDate</th>
                         <th>ExamTime</th>
-                        <th>MID </th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -60,9 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                             echo "<td>" . $row['ExamName'] . "</td>";
                             echo "<td>" . $row['ExamDate'] . "</td>";
                             echo "<td>" . $row['ExamTime'] . "</td>";
-                            echo "<td>" . $row['MID'] . "</td>";
                             echo "<td class='actions'>
-                                <a href='updateexams.php?ExamID=" . $row['ExamID'] . "&ExamName=" . urlencode($row['ExamName']) . "&ExamDate=" . urlencode($row['ExamDate']) . "&ExamTime=" . urlencode($row['ExamTime']) . "&MID=" . urlencode($row['MID']) . "' class='btn update-btn'>Update</a>
+                                <a href='updateexams.php?ExamID=" . $row['ExamID'] . "&ExamName=" . urlencode($row['ExamName']) . "&ExamDate=" . urlencode($row['ExamDate']) . "&ExamTime=" . urlencode($row['ExamTime']) . "' class='btn update-btn'>Update</a>
                                 <form action='' method='POST' style='display: inline;'>
                                     <input type='hidden' name='delete_id' value='" . $row['ExamID'] . "'>
                                     <button type='submit' class='btn delete-btn'>Delete</button>

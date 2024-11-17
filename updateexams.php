@@ -15,35 +15,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $exam_name = $_POST['exam-name'];
     $exam_date = $_POST['exam-date'];
     $exam_time = $_POST['exam-time'];
-    $mid = intval($_POST['MID']);
 
-    $check = "SELECT MID FROM module WHERE MID = '$mid'";
-    $result = mysqli_query($conn, $check);
 
-    if(mysqli_num_rows($result) > 0)
-    {
-        $sql = "UPDATE exam SET ExamName = '$exam_name', ExamDate = '$exam_date', ExamTime = '$exam_time', MID = '$mid' WHERE ExamID = $exam_id";
+        $sql = "UPDATE exam SET ExamName = '$exam_name', ExamDate = '$exam_date', ExamTime = '$exam_time' WHERE ExamID = $exam_id";
         if (mysqli_query($conn, $sql)) 
         {
-            header("Location: viewexams.php");
+            header("Location: viewexams2.php");
             exit();
         }
         else 
         {
             echo "<script>alert('Error: Cannot update exam');</script>";
         }
-    }
-    else 
-    {
-        echo "<script>alert('Error: The MID does not exist.');</script>";
-    }
+    
+ 
 }
 
 $exam_id = isset($_GET['ExamID']) ? intval($_GET['ExamID']) : 0;
 $exam_name = '';
 $exam_date = '';
 $exam_time = '';
-$mid = '';
+
 
 if ($exam_id > 0) {
     $sql = "SELECT * FROM exam WHERE ExamID = $exam_id";
@@ -54,7 +46,6 @@ if ($exam_id > 0) {
         $exam_name = $row['ExamName'];
         $exam_date = $row['ExamDate'];
         $exam_time = $row['ExamTime'];
-        $mid = $row['MID'];
     }
 }
 ?>
@@ -97,8 +88,7 @@ if ($exam_id > 0) {
                 <label for="exam-time">Exam Time</label></br>
                 <input type="time" id="exam-time" name="exam-time" value="<?php echo htmlspecialchars($exam_time); ?>"></br></br>
 
-                <label for="MID">MID</label></br>
-                <input type="number" id="MID" name="MID" value="<?php echo htmlspecialchars($mid); ?>"></br></br>
+
 
                 <button type="submit">Update Exam</button>
             </form>

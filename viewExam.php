@@ -13,13 +13,15 @@
             <img src="images/logo.png" alt="Logo">
                 </div>
                 <ul>
-                    <li><a href="#">
+                    <li><a href="dashboardstudent.html">
+                        <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                    <li><a href="viewExam.php">
                         <img src="Images/exams.png" alt="exam" class="icon">Exams</a>
                     </li>  
-                    <li><a href="viewGpa.php#">
+                    <li><a href="viewGpa.php">
                         <img src="images/download.png" alt="gpa" class="icon">GPA</a>
                     </li> 
-                    <li><a href="login.html#">
+                    <li><a href="login.html">
                         <img src="images/download.png" alt="gpa" class="icon">log out</a>
                     </li> 
                 </ul>
@@ -27,7 +29,7 @@
         <div class="view">
             <h1>Exam Schedule</h1>
             <?php
-            include "conf.php";
+            include "config.php";
             
             $sql = "SELECT * FROM exam";
             $result = mysqli_query($conn, $sql);
@@ -52,8 +54,7 @@
                             <td>{$row['ExamID']}</td>
                             <td>{$row['ExamName']}</td>
                             <td>{$row['ExamDate']}</td>
-                            <td style="color:black;">{$row['ExamTime']}</td>
-                            
+                            <td style="color:black;">{$row['ExamTime']}</td>    
                         </tr>
             HTML;
                 }

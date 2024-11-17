@@ -27,7 +27,7 @@
         <div class="view">
             <h1>GPA</h1>
             <?php
-            include "config.php";
+            include "config3.php";
             
             $sql = "SELECT GpaId,SName,Gpa FROM gpa";
             $result = mysqli_query($conn, $sql);

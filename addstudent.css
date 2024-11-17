@@ -13,7 +13,8 @@ body {
     margin: 0;
     background-image: url(images/addstudent.jpg);
     background-repeat: no-repeat;
-    background-size: 1920px,1080px;
+    background-size: cover;
+    overflow-y: auto; 
 }
 
 .container {
@@ -55,52 +56,56 @@ body {
 }
 
 .icon {
-    width: 50px; 
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
-
 
 .login {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     flex-grow: 1;
-    padding: 50px;
+    padding: 20px;
     display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100vh;             
-    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: auto; 
 }
 
 .login h1 {
     font-size: 36px;
-    margin: 0;                 
-    text-align: center;        
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px; /* Add padding to give space */
 }
 
-
 .form {
-    padding: 50px;
+    padding: 20px;
     display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100vh;             
+    justify-content: center;
+    align-items: stretch;
     flex-direction: column;
-    width: 700px;
-    margin: 0;
+    width: 100%; /* Ensure the form uses available width */
+    max-width: 700px; /* Limit the maximum width */
+    overflow-y: auto;
+
 }
 
 .form label {
-    margin: 10px 0 5px;
+    display: block;
     font-size: 18px;
-    align-self: flex-start;
+    color: white;
+    margin-bottom: 5px;
+    min-height: 20px; /* Ensures the label has enough space */
 }
+
 
 .form input {
     padding: 10px;
     font-size: 16px;
-    width: 600px;
+    width: 100%; /* Use full width for inputs */
     margin-bottom: 20px;
     border: none;
     outline: none;
@@ -119,5 +124,5 @@ button {
     border: none;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: 40px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
 }

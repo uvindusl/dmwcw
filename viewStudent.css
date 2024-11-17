@@ -79,17 +79,18 @@ body {
 .login h1 {
     font-size: 60px;
     margin: 0;
-    height: 90px;
+    height: 70px;
     color: white;
     flex: 0 1 auto;
 }
 
 .table1 { 
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end;  
     flex: 1 1 auto;  
+    margin-top: 50px;
 }
 
 

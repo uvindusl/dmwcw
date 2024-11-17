@@ -16,8 +16,7 @@
                 <li><a href="dashboardadmin.html"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
                 <li><a href="viewStudent.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
                 <li><a href="addstudent.html"><img src="images/student.png" alt="add" class="icon">add Students</a></li>
-                <li><a href="ViewLecture.php"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="viewmoduleforlec.php"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>              
+                <li><a href="ViewLecture.php"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>         
             </ul>
         </div>
         <div class="login">

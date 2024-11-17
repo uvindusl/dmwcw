@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Calculate GPA</title>
-    <link rel="stylesheet" href="gpaCal.css">
+    <link rel="stylesheet" href="gpaCalStyle.css">
     <script>
         
         function calcGrade() 
@@ -142,13 +142,14 @@
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
             </div>
-            <ul>
-                <li><a href="addstudent.html#"><img src="" alt="exam" class="icon">Add Students</a></li>
-                <li><a href="dashboard.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="#"><img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="#"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="viewmodule.php#"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                    <li><a href="#"><img src="images/student.png" alt="student" class="icon">Students</a></li>
+                    <li><a href="#"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
+                    <li><a href="viewmodule.php#"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>
+                </ul>
+             </nav>
         </div>
         <div class="form">
             <h1>Calculate Student GPA</h1>
@@ -200,9 +201,12 @@
 
                 <input type="hidden" id="tableData" name="tableData"> <!-- Hidden input for table data -->
                 <input type="hidden" id="GPAInput" name="GPAInput">
-                
+
                 <button type="button" onclick="addToTable()">Add to Table</button>
-                <button type="submit">Submit to Database</button>
+                <button type="submit">Save</button><br><br>
+
+                <strong>GPA: </strong>
+                <output id="GPA">0.00</output> 
             </form>
             <div class="tableDiv">
                 <table id="dataTable" class="table">
@@ -227,9 +231,7 @@
                         ?>
                     </tbody>
                 </table>
-                <div> 
-                    <strong>GPA: </strong>
-                    <output id="GPA">0.00</output>                     
+                <div>                     
                 </div>
             </div>
         </div>

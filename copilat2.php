@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Error inserting record: " . mysqli_error($conn);
             }
         }
-        header("Location: gpaCal.php");
+        header("Location: copilat.php");
         echo "Records inserted successfully.";
     }
 }

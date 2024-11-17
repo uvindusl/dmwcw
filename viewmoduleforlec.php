@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
         <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
         <nav>
             <ul>
-                <li><a href="dashbord.html#"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href="viewStudent.php#"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                <li><a href="#"><img src="Images/download-removebg-preview (6) (1).png"> Lecturer </a></li>
-                <li><a href="viewmodule.php#"><img src="Images/c.png"> Modules </a></li>
+                <li><a href="dashboardlecuters.html#"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
+                <li><a href="viewStudentforlec.php#"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
+                
+                <li><a href="viewmoduleforlec.php#"><img src="Images/c.png"> Modules </a></li>
                 <li><a href="addModule.html"><img src="Images/c.png">Add Modules </a></li>
             </ul>
         </nav>

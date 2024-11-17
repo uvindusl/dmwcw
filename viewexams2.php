@@ -4,7 +4,7 @@ $username = "root";
 $password = ""; 
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname, 3307);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     $id = intval($_POST['delete_id']);
@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
         <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
         <nav>
             <ul>
-                <li><a href="#"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href="#"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                <li><a href="#"><img src="Images/download-removebg-preview (6) (1).png"> Lecturer </a></li>
-                <li><a href="#"><img src="Images/c.png"> Courses </a></li>
+                <li><a href="dashboardlecuters.html"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
+                <li><a href="viewStudentforlec.php"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
+                
+                <li><a href="viewmoduleforlec.php"><img src="Images/c.png"> Courses </a></li>
             </ul>
         </nav>
     </div>
@@ -44,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                         <th>ExamName</th>
                         <th>ExamDate</th>
                         <th>ExamTime</th>
-                        <th>MID </th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -60,9 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                             echo "<td>" . $row['ExamName'] . "</td>";
                             echo "<td>" . $row['ExamDate'] . "</td>";
                             echo "<td>" . $row['ExamTime'] . "</td>";
-                            echo "<td>" . $row['MID'] . "</td>";
                             echo "<td class='actions'>
-                                <a href='updateexams.php?ExamID=" . $row['ExamID'] . "&ExamName=" . urlencode($row['ExamName']) . "&ExamDate=" . urlencode($row['ExamDate']) . "&ExamTime=" . urlencode($row['ExamTime']) . "&MID=" . urlencode($row['MID']) . "' class='btn update-btn'>Update</a>
+                                <a href='updateexams.php?ExamID=" . $row['ExamID'] . "&ExamName=" . urlencode($row['ExamName']) . "&ExamDate=" . urlencode($row['ExamDate']) . "&ExamTime=" . urlencode($row['ExamTime']) . "' class='btn update-btn'>Update</a>
                                 <form action='' method='POST' style='display: inline;'>
                                     <input type='hidden' name='delete_id' value='" . $row['ExamID'] . "'>
                                     <button type='submit' class='btn delete-btn'>Delete</button>

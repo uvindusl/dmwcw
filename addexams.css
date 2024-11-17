@@ -101,6 +101,21 @@ h1
     background: transparent;
     border-bottom: 2px solid #fff;
 }
+.exam-form select option
+{
+    background-color: rgb(6, 54, 116);
+}
+
+.exam-form select
+{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+}
 
 .exam-form button
 {

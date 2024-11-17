@@ -24,8 +24,26 @@
             <h1> Add Exams </h1>
             <div class = "fill">
             <form class = "exam-form" id = "exam-form" method="post" action="addexams.php" onsubmit="return Validate()">
-                <label for="exam-name">Exam Name</label></br>
-                <input type="text" id="exam-name" name="exam-name"></br></br>
+                <!--<label for="exam-name">Exam Name</label></br>
+                <input type="text" id="exam-name" name="exam-name"></br></br>-->
+
+                <label for="Module-name">Module Name</label>
+                <select id="Module" name="Module">
+                    <?php
+
+                    include "conf.php";
+
+                    $sql1 = "SELECT MName FROM module";
+                    $result1 = mysqli_query($conn, $sql1);
+                    
+                    if (mysqli_num_rows($result1) > 0) 
+                    {
+                        while ($row = mysqli_fetch_assoc($result1)) {
+                            echo "<option>{$row['MName']}</option>";
+                        }
+                    }
+                    ?>
+                </select><br><br>
     
                 <label for="exam-date">Exam Date</label></br>
                 <input type="date" id="exam-date" name="exam-date"></br></br>
@@ -33,8 +51,8 @@
                 <label for="exam-time">Exam Time</label></br>
                 <input type="time" id="exam-time" name="exam-time"></br></br>
     
-                <label for="mid">Module ID</label></br>
-                <input type="number" id="mid" name="mid"></br></br>
+               <!-- <label for="mid">Module ID</label></br>
+                <input type="number" id="mid" name="mid"></br></br>--->
     
                 <button type = "submit">Add Exam</button>
             </form>

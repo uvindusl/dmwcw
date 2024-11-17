@@ -134,6 +134,7 @@
         {
             document.getElementById('Marks').addEventListener('input', calcGrade);
         });
+
     </script>
 </head>
 <body>

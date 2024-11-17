@@ -4,7 +4,7 @@ $username = "root";
 $password = ""; 
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname, 3307);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     $id = intval($_POST['delete_id']);
@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
         <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
         <nav>
             <ul>
-                <li><a href="#"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href="#"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                <li><a href="#"><img src="Images/download-removebg-preview (6) (1).png"> Lecturer </a></li>
-                <li><a href="#"><img src="Images/c.png"> Courses </a></li>
+                <li><a href="dashboardlecuters.html"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
+                <li><a href="viewStudentforlec.php"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
+                
+                <li><a href="viewmoduleforlec.php"><img src="Images/c.png"> Courses </a></li>
             </ul>
         </nav>
     </div>

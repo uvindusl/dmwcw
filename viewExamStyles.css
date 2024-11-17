@@ -1,3 +1,11 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 .Exam
 {
     background-image: url(Images/bla.jpeg);
@@ -75,6 +83,7 @@
 
 .view h1
 {
+    padding-top: 100px;
     text-align: center;
     color: white;
     padding-left: 50px;

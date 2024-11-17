@@ -29,7 +29,7 @@
             <?php
             include "conf.php";
             
-            $sql = "SELECT SID,SName,SGPA FROM student";
+            $sql = "SELECT GpaId,SName,Gpa FROM gpa";
             $result = mysqli_query($conn, $sql);
             
             echo <<<HTML
@@ -37,8 +37,8 @@
                 <table class="table centered">
                     <thead>
                         <tr>
-                            <th>Student ID</th>
-                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Student Name</th>
                             <th>GPA</th>
                         </tr>
                     </thead>
@@ -48,9 +48,9 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo <<<HTML
                         <tr>
-                            <td>{$row['SID']}</td>
+                            <td>{$row['GpaId']}</td>
                             <td>{$row['SName']}</td>
-                            <td>{$row['SGPA']}</td>
+                            <td>{$row['Gpa']}</td>
                             
                         </tr>
             HTML;

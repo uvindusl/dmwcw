@@ -13,11 +13,11 @@
                 <img src="images/logo.png" alt="Logo">
             </div>
             <ul>
-                <li><a href="addstudent.html#"><img src="Images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="dashbord.html#"><img src="Images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="#"><img src="Images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="#"><img src="Images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="viewmodule.php#"><img src="Images/course.png" alt="Courses" class="icon">Modules</a></li>              
+                
+                <li><a href="dashbord.html"><img src="Images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                <li><a href="addstudent.html"><img src="Images/student.png" alt="student" class="icon">Students</a></li>
+                <li><a href="ViewLecture.php"><img src="Images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
+                <li><a href="AddLecture.php"><img src="Images/lectures.png" alt="lectures" class="icon">Add Lecturers</a></li>            
             </ul>
         </div>
         <div class="login">

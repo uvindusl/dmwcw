@@ -1,9 +1,9 @@
 function Validate() 
 {
-    let examname = document.getElementById("exam-name").value.trim();
+    let examname = document.getElementById("Module").value.trim();
     let examdate = document.getElementById("exam-date").value.trim();
     let examtime = document.getElementById("exam-time").value.trim();
-    let mid = document.getElementById("mid").value.trim();
+
     let errorMessage = "";
 
     if (!examname) 
@@ -24,12 +24,6 @@ function Validate()
     {
         errorMessage += "Please enter exam time. \n";
     }
-
-    if(!mid)
-    {
-        errorMessage += "Please enter a module ID. \n";
-    }
-
     if (errorMessage)
     {
         alert(errorMessage);

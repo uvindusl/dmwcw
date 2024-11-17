@@ -13,13 +13,13 @@
             <img src="images/logo.png" alt="Logo">
                 </div>
                 <ul>
-                    <li><a href="viewExam.php#">
+                    <li><a href="viewExam.php">
                         <img src="Images/exams.png" alt="exam" class="icon">Exams</a>
                     </li>  
-                    <li><a href="#">
+                    <li><a href="viewGpa.php">
                         <img src="images/download.png" alt="gpa" class="icon">GPA</a>
                     </li> 
-                    <li><a href="login.html#">
+                    <li><a href="login.html">
                         <img src="images/download.png" alt="gpa" class="icon">log out</a>
                     </li> 
                 </ul>
@@ -27,7 +27,7 @@
         <div class="view">
             <h1>GPA</h1>
             <?php
-            include "conf.php";
+            include "config.php";
             
             $sql = "SELECT GpaId,SName,Gpa FROM gpa";
             $result = mysqli_query($conn, $sql);

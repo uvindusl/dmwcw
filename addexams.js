@@ -1,19 +1,15 @@
 function Validate() 
 {
-    let examname = document.getElementById("Module").value.trim();
+    let module = document.getElementById("Module").value.trim();
     let examdate = document.getElementById("exam-date").value.trim();
     let examtime = document.getElementById("exam-time").value.trim();
 
     let errorMessage = "";
 
-    if (!examname) 
+    if (!module) 
     {
-        errorMessage += "Please enter a exam name.\n";
+        errorMessage += "Please select module.\n";
     } 
-    else if (examname.length > 255) 
-    {
-        errorMessage += "Exam name is too long (maximum 255 characters).\n";
-    }
 
     if (!examdate) 
     {

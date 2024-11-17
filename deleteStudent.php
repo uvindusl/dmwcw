@@ -1,6 +1,6 @@
 <?php
 
-include "conf.php";
+include "config.php";
 
 if(isset($_GET['id'])){
     $s_id = $_GET['id'];

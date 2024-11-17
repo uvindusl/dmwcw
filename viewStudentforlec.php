@@ -13,14 +13,13 @@
                 <img src="images/logo.png" alt="Logo">
             </div>
             <ul>
-                <li><a href="dashboardadmin.html"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="viewStudent.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="addstudent.html"><img src="images/student.png" alt="add" class="icon">add Students</a></li>
-                <li><a href="AddLecture.html"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>              
+                <li><a href="dashboardlecuters.html"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                <li><a href="viewStudentforlec.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
+                <li><a href="viewmoduleforlec.php"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>              
             </ul>
         </div>
         <div class="login">
-            <h1>Update & Delete Student</h1>
+            <h1>View Student</h1>
             <?php
             include "config.php";
             
@@ -38,6 +37,7 @@
                             <th>SAddress</th>
                             <th>SEmail</th>
                             <th>SContact</th>
+                            <th>SGPA</th>
                         </tr>
                     </thead>
                     <tbody> 
@@ -52,10 +52,8 @@
                             <td>{$row['SAddress']}</td>
                             <td>{$row['SEmail']}</td>
                             <td>{$row['SContact']}</td>
-                            <td>
-                                <a class="button" href="updateStudent.php?id={$row['SID']}">Update</a>&nbsp;
-                                <a class="button" href="deleteStudent.php?id={$row['SID']}">Delete</a>
-                            </td>
+                            <td>{$row['SGPA']}</td>
+                            
                         </tr>
             HTML;
                 }

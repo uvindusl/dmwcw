@@ -134,6 +134,7 @@
         {
             document.getElementById('Marks').addEventListener('input', calcGrade);
         });
+
     </script>
 </head>
 <body>
@@ -144,17 +145,17 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="dashboard.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                    <li><a href="#"><img src="images/student.png" alt="student" class="icon">Students</a></li>
-                    <li><a href="#"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                    <li><a href="viewmodule.php#"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>
+                    <li><a href="dashboardlecuters.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
+                    <li><a href="viewStudentforlec.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
+                    
+                    <li><a href="viewmoduleforlec.php"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>
                 </ul>
              </nav>
         </div>
         <div class="form">
             <h1>Calculate Student GPA</h1>
             <?php
-                include "conf.php";
+                include "config3.php";
 
                 $sql = "SELECT SName FROM student";
                 $result = mysqli_query($conn, $sql);

@@ -11,7 +11,7 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    background-image: url(Images/addstudent.jpg);
+    background-image: url(Images/hq720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -61,7 +61,7 @@ body {
     width: 50px; 
     height: 50px;
     margin-right: 10px;
-    padding-bottom: 0.5cm;
+    
 }
 
 .login {

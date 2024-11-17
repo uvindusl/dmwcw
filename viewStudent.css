@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +18,13 @@ body {
     overflow-y: auto;
 }
 
-/* Container Layout */
+
 .container {
     display: flex;
     width: 100%;
 }
 
-/* Sidebar Styles */
+
 .sidebar {
     background-color: #001f3f;
     width: 20%;
@@ -67,7 +67,7 @@ body {
     margin-right: 10px;
 }
 
-/* Main Content */
+
 .login {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -87,7 +87,7 @@ body {
     color: white;
 }
 
-/* Table Styles */
+
 .table1 {
     margin-top: 20px;
     width: 100%;
@@ -117,7 +117,7 @@ table.centered td {
     color: white;
 }
 
-/* Buttons */
+
 .button {
     display: inline-block;
     font-size: 14px;

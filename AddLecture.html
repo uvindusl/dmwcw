@@ -28,7 +28,7 @@
         </div>
         <div class="pagebody">
             <h1>Add Lecturers</h1>
-            <form class="lecdetails" id = "addlec" name="lecd" onsubmit="return validate()">
+            <form class="lecdetails" id = "addlec" name="lecd" onsubmit="return validate()" action="AddLecture.php" method="post">
 
                 <label for="name">Lecturer Name</label>
                 <input type="text" id="lecname" name="lecname">
@@ -42,7 +42,7 @@
                 <label for="address">Address</label>
                 <input type="text" id="address" name="address">
 
-                <button type="submit">Add Lecturer</button>
+                <button type="submit" name="submit">Add Lecturer</button>
 
 
             </form>

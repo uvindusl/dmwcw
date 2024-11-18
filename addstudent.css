@@ -1,13 +1,13 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+
 html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 body {
@@ -22,12 +22,11 @@ body {
     min-height: 100vh;
 }
 
-/* Container */
+
 .container {
     width: 100%;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -119,7 +118,6 @@ nav ul li ul li a:hover {
     color: black;
 }
 
-/* Form */
 .form {
     padding: 20px;
     display: flex;
@@ -150,7 +148,7 @@ nav ul li ul li a:hover {
     background: transparent;
 }
 
-/* Button */
+
 button {
     font-size: 19px;
     background: linear-gradient(to right, #38a2d8, #0d34e9);

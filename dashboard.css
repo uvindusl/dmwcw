@@ -1,16 +1,12 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
-    color: #ffffff;
-    background-image: url(images/WhatsApp\ Image\ 2024-11-15\ at\ 20.22.30_40227405.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
+    background-color: #f4f4f9;
 }
 
 .content {
@@ -19,76 +15,84 @@ body {
     padding: 20px;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #020207, #3231c4);
+    color: #fff;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
 
 .logo h1 {
-    font-size: 14px;
+    font-size: 18px;
 }
-.logo img {
-    width: 60px;
-}
-
 
 nav ul {
     display: flex;
     list-style: none;
-    margin-top: 60px;
 }
 
 nav ul li {
+    position: relative;
     margin-right: 20px;
-    position: relative; 
 }
-
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 20px 25px;
+    font-size: 16px;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
     border-bottom: 2px solid #ffffff;
 }
 
-
 nav ul li ul {
     display: none;
     position: absolute;
-    top: 100%; 
-    width: 200px; 
-    background-color: transparent; 
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
     list-style: none;
-    padding: 0; 
-    margin: 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
 
 nav ul li:hover ul {
-    margin-top: 10px;
-    display: block; 
+    display: block;
 }
 
-nav ul li ul li { 
+nav ul li ul li {
     text-align: center;
-    margin-top: 15px; 
 }
 
 nav ul li ul li a {
-    padding: 10px 20px; 
-    font-size: 16px; 
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 nav ul li ul li a:hover {
-    background-color: #fdfdfd;
+    background-color: #f0f0f0;
     color: black;
-    border-bottom: none; 
+}
+
+.hello {
+    margin-top: 20px;
+}
+
+.hello-image {
+    width: 100%;
+    border-radius: 8px;
 }

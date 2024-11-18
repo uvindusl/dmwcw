@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,129 +6,177 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #001f3f;
-    color: white;
+    background-color: #f4f4f4;
+    color: #333;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
     margin: 0;
-    background-image: url(images/addstudent.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     overflow-y: auto;
 }
-
 
 .container {
     display: flex;
+    flex-direction: column;
+    flex: 1;
     width: 100%;
+    background-color: white;
 }
 
-
-.sidebar {
-    background-color: #001f3f;
-    width: 20%;
-    padding: 20px;
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    height: 100vh;
-    left: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #020207, #3231c4);
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.sidebar ul {
-    list-style: none;
-    width: 100%;
-}
-
-.sidebar ul li {
-    margin: 20px 0;
-}
-
-.sidebar ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
+    width: 50px;
     margin-right: 10px;
 }
 
+.logo h1 {
+    font-size: 18px;
+}
 
-.login {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    flex-grow: 1;
-    padding: 50px;
-    margin-left: 20%;
-    height: 100vh;
-    overflow-y: auto;
+nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    list-style: none;
 }
 
-.login h1 {
-    font-size: 40px;
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    text-align: center;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    margin-left: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
     margin-bottom: 20px;
-    color: white;
+    color: #333;
 }
 
-
-.table1 {
+.table-container {
     margin-top: 20px;
     width: 100%;
-    text-align: center;
+    max-width: 1200px;
+    margin-bottom: 20px;
 }
 
 table.centered {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
 }
 
 table.centered, table.centered th, table.centered td {
-    border: 1px solid white;
+    border: 1px solid #ddd;
 }
 
 table.centered th {
-    background-color: #001f3f;
-    color: #08a2bc;
+    background-color: #333;
+    color: white;
     padding: 15px;
-    text-align: center;
 }
 
 table.centered td {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
-    color: white;
 }
 
-
-.button {
-    display: inline-block;
+button, .button {
     font-size: 14px;
-    color: white;
-    background-color: #08a2bc;
-    border: none;
-    border-radius: 5px;
     padding: 10px 15px;
-    text-decoration: none;
+    background-color: #08bc20;
+    color: white;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.button:hover {
+button:hover, .button:hover {
     background-color: red;
 }
+
+footer.footer {
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+

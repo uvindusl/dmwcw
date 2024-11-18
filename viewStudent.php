@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="viewStudent.css">
 </head>
 <body>
-<div class="container">
-        <div class="sidebar">
+    <div class="container">
+        <header>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
             </div>
-            <ul>
-                <li><a href="dashboardadmin.html"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="viewStudent.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="addstudent.html"><img src="images/student.png" alt="add" class="icon">add Students</a></li>
-                <li><a href="AddLecture.html"><img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>              
-            </ul>
-        </div>
-        <div class="login">
+            <nav>
+                <ul>
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li>
+                        <a href="addstudent.html">Student</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="AddLecture.html">Lectures</a>
+                        <ul>
+                            <li><a href="AddLecture.html">Add Lectures</a></li>
+                            <li><a href="ViewLecture.php">Manage Lectures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">
             <h1>Update & Delete Student</h1>
             <?php
             include "config.php";
@@ -28,7 +44,7 @@
             $result = mysqli_query($conn, $sql);
             
             echo <<<HTML
-            <div class="table1">
+            <div class="table-container">
                 <table class="table centered">
                     <thead>
                         <tr>
@@ -38,6 +54,7 @@
                             <th>SAddress</th>
                             <th>SEmail</th>
                             <th>SContact</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody> 
@@ -67,7 +84,14 @@
             </div>
             HTML;
             ?>
-        </div>
+        </main>
+
+        <footer class="footer">
+            <pre>
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+        </footer>
     </div>
 </body>
 </html>

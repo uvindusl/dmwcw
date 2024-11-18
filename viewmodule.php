@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root"; 
-$password = ""; 
-$dbname = "dmw_cw";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
-    $id = intval($_POST['delete_id']);
-    $sql = "DELETE FROM module WHERE MID = $id";
-    mysqli_query($conn, $sql);
-}
+include "conf.php";
 ?>
 
 <!DOCTYPE html>

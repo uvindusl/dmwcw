@@ -110,7 +110,7 @@ nav ul li ul li a:hover
     margin-bottom: 40px;
 }
 
-.lec-form label
+.form label
 {
     display: block;
     font-size: 14px;
@@ -118,7 +118,7 @@ nav ul li ul li a:hover
     text-align: left; 
 }
 
-.lec-form input
+.form input
 {
     color: rgb(0, 0, 0);
     width: 100%;
@@ -129,7 +129,7 @@ nav ul li ul li a:hover
     border-bottom: 2px solid #000000;
 }
 
-.lec-form button
+.form button
 {
     background-image: linear-gradient(to right, #dd72a6,#9d208f );
     color: #fff;
@@ -143,7 +143,7 @@ nav ul li ul li a:hover
     margin-left: 290px;
 }
 
-.lec-form button:hover
+.form button:hover
 {
     background-image: linear-gradient(to right, #a359a0, #6141ac);
 }

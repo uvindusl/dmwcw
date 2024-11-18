@@ -1,6 +1,6 @@
 <?php
 
-include "config.php";
+include "conf.php";
 
 $id = $_GET['id'];
 
@@ -50,18 +50,22 @@ if(isset($_POST['submit'])){
             </div>
             <ul>
                 
-                <li><a href="dashboardadmin.html">
+                <li><a href="#">
                     <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
                 <li><a href="addstudent.html">
                     <img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="AddLecture.html">
+                <li><a href="#">
                     <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
+                <li><a href="#">
+                    <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
+                <li><a href="#">
+                    <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
                 
             </ul>
         </div>
         <div class="login">
             <h1>Update</h1>
-            <form class="form" method="post" action="">
+            <form class="form" method="post" action="" onsubmit="updatelecvalidate.js">
 
                 <label for="name">Student Name</label>
                 <input type="text" id="StudentName" name="StudentName"  value="<?php echo $sname; ?>">
@@ -79,6 +83,7 @@ if(isset($_POST['submit'])){
                 <input type="tel" id="Contact" name="Contact" value="<?php echo $scontact; ?>">
 
                 <button type="submit" name="submit">Update</button>
+                <button>bla</button>
             </form>
         </div>
     </div>

@@ -96,3 +96,61 @@ nav ul li ul li a:hover {
     width: 100%;
     border-radius: 8px;
 }
+
+footer {
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
+}
+.about {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 50vh;
+    text-align: center; 
+    background: linear-gradient(to bottom, #ffffff, #d3e0fa); /* Add gradient background */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 20px;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.about h1 {
+    font-size: 36px; /* Larger heading */
+    color: #3231c4; /* Theme color */
+    margin-bottom: 20px; /* Add spacing below heading */
+}
+
+.about p {
+    font-size: 18px; /* Text size */
+    color: #333; /* Subtle text color */
+    max-width: 600px; /* Limit text width */
+    line-height: 1.6; /* Improve readability */
+}
+

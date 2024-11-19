@@ -7,7 +7,14 @@ form
     padding-left: 100px;
     padding-right: 100px;
 }
-
+form .Username
+{
+    padding-right: 280px;
+}
+form .password
+{
+    padding-right: 280px;
+}
 form input[type="text"], 
 form input[type="password"]
 {
@@ -16,7 +23,7 @@ form input[type="password"]
     background: transparent;
     border-bottom: 3px solid #000000;
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
     text-align: left;
 }
 
@@ -26,7 +33,7 @@ form input[type = "radio"]
 }
 .btnlogin
 {
-    background: linear-gradient(to right, #0927eb, #38b6ff) ;
+    background: linear-gradient(to right, #040d48, #0022ff) ;
     color: white;
     border-radius: 15px;
     height: 30px;
@@ -36,7 +43,7 @@ form input[type = "radio"]
 }
 .btnlogin:hover
 {
-    background: linear-gradient(to right, #ff0000, #b700ff) ;
+    background: linear-gradient(to right, #0050b3, #00aeff) ;
     transform: scale(1.05);
 
 }

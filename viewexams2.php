@@ -10,6 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     $id = intval($_POST['delete_id']);
     $sql = "DELETE FROM exam WHERE ExamID = $id";
     mysqli_query($conn, $sql);
+    echo "<script>alert('delete successs, redirecting to the view page...');</script>";
+    echo "<script>window.location.href = 'viewExams2.php';</script>";
 }
 ?>
 

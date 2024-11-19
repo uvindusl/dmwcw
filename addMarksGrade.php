@@ -31,9 +31,8 @@ include 'conf.php';
             {
                 echo "Error inserting record: " . mysqli_error($conn);
             }
-
-            header("Location: gpaCal.php");
-            echo "Records inserted successfully.";
+            echo "<script>alert('Records inserted successfully, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'gpaCal.php';</script>";
         }
     }
 

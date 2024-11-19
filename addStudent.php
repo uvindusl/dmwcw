@@ -14,7 +14,8 @@ if(isset($_POST['submit'])) {
     $sql = "INSERT INTO student (SName, SAge , SAddress , SEmail , SContact , Password) VALUES ('$sname','$sage','$saddress' , '$semail' , '$scontact' , '$spassword')";
 
     if(mysqli_query($conn, $sql)) {
-        header("Location: addstudent.html");
+        echo "<script>alert('add successs, redirecting to the view page...');</script>";
+        echo "<script>window.location.href = 'viewStudent.php';</script>";
        } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
        }

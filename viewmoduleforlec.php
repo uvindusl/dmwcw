@@ -5,12 +5,14 @@ $username = "root";
 $password = ""; 
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname,3307);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     $id = intval($_POST['delete_id']);
     $sql = "DELETE FROM module WHERE MID = $id";
     mysqli_query($conn, $sql);
+    echo "<script>alert('update successs, redirecting to the view page...');</script>";
+    echo "<script>window.location.href = 'Viewmoduleforlec.php';</script>";
 }
 ?>
 

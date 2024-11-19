@@ -4,7 +4,7 @@ $uname = "root";
 $pass = "";
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($sname, $uname, $pass, $dbname,3307);
+$conn = mysqli_connect($sname, $uname, $pass, $dbname);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -19,8 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO exam (ExamName, ExamDate, ExamTime) VALUES ('$exam_name', '$exam_date', '$exam_time')";
         if (mysqli_query($conn, $sql)) 
         {
-            header("Location: viewexams2.php");
-            exit();
+
+            echo "<script>alert('add successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'viewexams2.php';</script>";
+    
         }
         else 
         {

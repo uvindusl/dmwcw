@@ -4,7 +4,7 @@ $sname = "localhost";
 $uname = "root";
 $pass = "";
 $dbname = "dmw_cw";
-$conn = mysqli_connect($sname, $uname, $pass, $dbname,3307);
+$conn = mysqli_connect($sname, $uname, $pass, $dbname);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -20,8 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "UPDATE exam SET ExamName = '$exam_name', ExamDate = '$exam_date', ExamTime = '$exam_time' WHERE ExamID = $exam_id";
         if (mysqli_query($conn, $sql)) 
         {
-            header("Location: viewexams2.php");
-            exit();
+            echo "<script>alert('update successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'viewexams2.php';</script>";
+
         }
         else 
         {

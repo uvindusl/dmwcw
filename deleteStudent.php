@@ -10,7 +10,9 @@ if(isset($_GET['id'])){
         $result = mysqli_query($conn, $sql);
 
         if($result == TRUE) {
-            header("Location: viewStudent.php");
+            echo "<script>alert('delete successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'viewStudent.php';</script>";
+    
         }
         else{
             echo "Error:" . $sql . "<br>" . mysqli_error($conn);

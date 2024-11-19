@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($servername,$username,$password,$dbname,3307);
+$conn = mysqli_connect($servername,$username,$password,$dbname);
 
 if(!$conn)
 {

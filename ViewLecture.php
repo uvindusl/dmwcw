@@ -71,7 +71,7 @@
                             <td>{$row['Password']}</td>
                             <td>
                                 <a class="update-btn" href="updateLecturer.php?id={$row['LID']}">Update</a>&nbsp;
-                                <a class="delete-btn" href="deleteStudent.php?id={$row['LID']}">Delete</a>
+                                <a class="delete-btn" href="DeleteLecture.php?id={$row['LID']}">Delete</a>
                             </td>
                         </tr>
             HTML;

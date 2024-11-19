@@ -27,8 +27,8 @@ if(isset($_POST['submit'])){
     $update_sql = "UPDATE lecturer SET  LName='$new_lname' , LPhoneNum='$new_contact' , LEmail='$new_email' , LAddress='$new_address' WHERE LID='$id'";
 
     if(mysqli_query($conn, $update_sql)) {
-		header("Location: ViewLecture.php");
-
+        echo "<script>alert('update successs, redirecting to the view page...');</script>";
+        echo "<script>window.location.href = 'ViewLecture.php';</script>";
     } else {
         echo "Error updating record: " . mysqli_error($conn);
     }

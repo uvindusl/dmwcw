@@ -14,12 +14,15 @@
     
         if (mysqli_num_rows($results) > 0)
         {
+            echo "<script>alert('login successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'dashboardadmin.html';</script>";
+    
             //echo "Login Succesful";
-            header("Location: dashboardadmin.html");
         }
         else
         {
-            echo "enter correct username and password";
+            echo "<script>alert('login unsuccesss, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'login.html';</script>";
         }
 
     }
@@ -32,12 +35,13 @@
     
         if (mysqli_num_rows($results) > 0)
         {
-            //echo "Login Succesful";
-            header("Location: dashboardstudent.html");
+            echo "<script>alert('login successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'dashboardstudent.html';</script>";
         }
         else
         {
-            echo "enter correct username and password";
+            echo "<script>alert('login unsuccesss, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'login.html';</script>";
         }
 
     }
@@ -50,12 +54,14 @@
     
         if (mysqli_num_rows($results) > 0)
         {
+            echo "<script>alert('login successs, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'dashboardlecuters.html';</script>";
             //echo "Login Succesful";
-            header("Location: dashboardlecuters.html");
         }
         else
         {
-            echo "enter correct username and password";
+            echo "<script>alert('login unsuccesss, redirecting to the view page...');</script>";
+            echo "<script>window.location.href = 'login.html';</script>";
         }
 
     }

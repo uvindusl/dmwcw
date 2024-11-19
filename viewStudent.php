@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="dashboardadmin.html">Dashboard</a></li>
                     <li>
-                        <a href="addstudent.html">Student</a>
+                        <a href="#">Student</a>
                         <ul>
                             <li><a href="addstudent.html">Add Students</a></li>
                             <li><a href="viewStudent.php">Manage Students</a></li>

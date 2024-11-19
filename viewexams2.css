@@ -169,19 +169,19 @@ table.centered td.actions {
 }
 
 .update-btn {
-    background-image: linear-gradient(to right, #00c853, #76ff03);
+    background-image: linear-gradient(to right, #1100c8, #03ddff);
 }
 
 .delete-btn {
-    background-image: linear-gradient(to right, #d50000, #ff1744);
+    background-image: linear-gradient(to right, #540000, #970000);
 }
 
 .update-btn:hover {
-    background-image: linear-gradient(to right, #76ff03, #00c853);
+    background-image: linear-gradient(to right, #22841d, #03ff42);
 }
 
 .delete-btn:hover {
-    background-image: linear-gradient(to right, #ff1744, #d50000);
+    background-image: linear-gradient(to right, #ae0000, #ff0000);
 }
 
 footer {

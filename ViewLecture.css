@@ -3,10 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -14,22 +12,24 @@ body {
     margin: 0;
     width: 100%;
     overflow-y: auto;
+    background-image: url(images2/gray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .container {
     display: flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
-    background-color: white;
+
 }
 
 header {
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(to right, #020207, #3231c4);
+    justify-content: space-between;
     color: #fff;
 }
 
@@ -101,7 +101,6 @@ nav ul li ul li a:hover {
     flex: 1;
     padding: 30px;
     margin-left: 0;
-    background-color: #fff;
     text-align: center;
 }
 
@@ -126,14 +125,14 @@ table.centered {
 }
 
 table.centered th {
-    background-color: #68cce8;
-    color: #000;
+    background-color: #030093;
+    color: white;
     padding: 10px;
     font-weight: bold;
 }
 
 table.centered td {
-    padding: 16px;
+    padding: 12px;
     border: 1px solid #000;
     text-align: center;
 }
@@ -142,19 +141,64 @@ thead th {
     font-size: 16px;
     text-transform: uppercase;
 }
-button, .button {
-    font-size: 14px;
-    padding: 15px 20px;
-    background-color: #08bc20;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+.update-btn {
+    background-image: linear-gradient(to right, #1100c8, #03ddff);
     text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
 }
 
-button:hover, .button:hover {
-    background-color: red;
+.delete-btn {
+    background-image: linear-gradient(to right, #540000, #970000);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-image: linear-gradient(to right, #22841d, #03ff42);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-image: linear-gradient(to right, #ae0000, #ff0000);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
 }
 
 footer.footer {

@@ -70,8 +70,8 @@
                             <td>{$row['SEmail']}</td>
                             <td>{$row['SContact']}</td>
                             <td>
-                                <a class="button" href="updateStudent.php?id={$row['SID']}">Update</a>&nbsp;
-                                <a class="button" href="deleteStudent.php?id={$row['SID']}">Delete</a>
+                                <a class="update-btn" href="updateStudent.php?id={$row['SID']}">Update</a>&nbsp;
+                                <a class="delete-btn" href="deleteStudent.php?id={$row['SID']}">Delete</a>
                             </td>
                         </tr>
             HTML;

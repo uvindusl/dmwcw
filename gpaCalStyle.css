@@ -157,18 +157,20 @@ nav ul li ul li a:hover
 
 .form1 button
 {
-    background: linear-gradient(to right, #800080, #000000) ;
+    font-weight: bold;
+    background: linear-gradient(to right, #040d48, #0022ff) ;
     color: white;
     border-radius: 15px;
     height: 30px;
     width: 100px;
     border: none;
     transition: background-color 1.0s ease, transform 0.5s ease;
+    margin-right: 20px;
 }
 
 .form1 button:hover
 {
-    background: linear-gradient(to right, #ff0000, #b700ff) ;
+    background: linear-gradient(to right, #0050b3, #00aeff) ;
     transform: scale(1.05);
 
 }

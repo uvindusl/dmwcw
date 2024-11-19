@@ -143,19 +143,78 @@ thead th {
     font-size: 16px;
     text-transform: uppercase;
 }
-button, .button {
-    font-size: 14px;
-    padding: 10px 15px;
-    background-color: #08bc20;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+.btn {
     text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
 }
 
-button:hover, .button:hover {
-    background-color: red;
+.update-btn {
+    background-image: linear-gradient(to right, #1100c8, #03ddff);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-image: linear-gradient(to right, #540000, #970000);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-image: linear-gradient(to right, #22841d, #03ff42);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-image: linear-gradient(to right, #ae0000, #ff0000);
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
 }
 
 footer {

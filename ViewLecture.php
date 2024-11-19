@@ -36,7 +36,7 @@
         </header>
 
         <main class="content">
-            <h1>Update & Delete Student</h1>
+            <h1>Update & Delete Lectures</h1>
             <?php
             include "config.php";
             
@@ -54,7 +54,7 @@
                             <th>Email</th>
                             <th>Address</th>
                             <th>Passowrd</th>
-                            
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody> 
@@ -70,8 +70,8 @@
                             <td>{$row['LAddress']}</td>
                             <td>{$row['Password']}</td>
                             <td>
-                                <a class="button" href="updateLecturer.php?id={$row['LID']}">Update</a>&nbsp;
-                                <a class="button" href="deleteStudent.php?id={$row['LID']}">Delete</a>
+                                <a class="update-btn" href="updateLecturer.php?id={$row['LID']}">Update</a>&nbsp;
+                                <a class="delete-btn" href="deleteStudent.php?id={$row['LID']}">Delete</a>
                             </td>
                         </tr>
             HTML;

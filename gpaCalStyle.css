@@ -8,74 +8,109 @@
 
 body
 {
-    background-image: url(Images/gpacal.jpg);
+    background-image: url(images2/newbackground.png);
     background-size: cover;
 }
 
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color:#740991;
-    color: #ffff;
-    position: fixed;
+header 
+{
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    justify-content: space-between;
 }
 
-.logo img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-.sidebar nav ul
+.logo 
 {
-    list-style: none;
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.sidebar ul li a {
-
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-
-}
-
-.sidebar ul li img
+.logo img
 {
-    width: 25px;
-    height: 25px;
-    margin-right: 14px;
-}
-
-
-.icon {
-    width: 50px; 
-    height: 50px;
+    width: 50px;
     margin-right: 10px;
 }
-.form
-{
 
+.logo h1 
+{
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul 
+{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li 
+{
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a 
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover 
+{
+    border-bottom: 2px solid #ffffff;
+}
+
+nav ul li ul 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul 
+{
+    display: block;
+}
+
+nav ul li ul li 
+{
+    text-align: center;
+}
+
+nav ul li ul li a 
+{
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav ul li ul li a:hover
+{
+    background-color: #f0f0f0;
+    color: black;
+}
+.form {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+    align-items: center; 
+    color: black;
 }
 
-.form h1
-{
+.form h1 {
     text-align: center;
     font-size: 45px;
     margin-top: 50px;
-    padding-left: 100px;
+    padding-left: 0; 
 }
 
 .form1
@@ -89,18 +124,18 @@ body
 
 .form1 input
 {
-    color: white;
+    color: black;
     width: 100%;
     padding: 10px;
     border: none;
     outline: none;
     background: transparent;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
 }
 
 .form1 select
 {
-    color: rgb(255, 255, 255);
+    color: black;
     width: 100%;
     padding: 10px;
     border: none;
@@ -110,7 +145,7 @@ body
 }
 .form1 select option
 {
-    background-color: rgb(74, 10, 88);
+    background-color: white;
 }
 .sidebar nav ul li
 {
@@ -138,24 +173,22 @@ body
 
 }
 
-.tableDiv { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end;  
-    flex: 1 1 auto;  
-    padding-left: 350px;
+.tableDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    padding-left: 0;
 }
 
-
 .table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50; /* Position the table at the top */
+    margin-top: 50px;
+    border-collapse: collapse;
 }
 
 
 .table, .table th, .table td {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 
@@ -171,10 +204,40 @@ body
 }
 
 .table th {
-    color: hwb(0 100% 0%);
+    color: black;
 }
 
 .table td {
-    color: rgb(255, 255, 255);
+    color: black;
+}
+footer {
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
 }
 

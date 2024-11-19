@@ -41,6 +41,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                             <li><a href="viewGpa.php">View GPA</a></li> 
                         </ul> 
                     </li>
+                    <li> <a href="">Module</a> 
+                        <ul> 
+                            <li><a href="viewmodule.php">view module</a></li> 
+                        </ul> 
+                    </li>
                     <li><a href="login.html">Log Out</a></li>
                 </ul>
             </nav>

@@ -16,20 +16,29 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="dashboardadmin.html">Dashboard</a></li>
-                    <li>
-                        <a href="addstudent.html">Student</a>
-                        <ul>
-                            <li><a href="addstudent.html">Add Students</a></li>
-                            <li><a href="viewStudent.php">Manage Students</a></li>
-                        </ul>
+                    <li><a href="dashboardlecuters.html">Dashboard</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li> <a href="#">Student</a> 
+                        <ul> 
+                            <li><a href="viewStudentforlec.php">View Students</a></li> 
+                        </ul> 
                     </li>
-                    <li>
-                        <a href="addModule.html">Modules</a>
-                        <ul>
-                            <li><a href="addModule.html">Add Modules</a></li>
-                            <li><a href="viewmodule.php">Manage Modules</a></li>
-                        </ul>
+                    <li><a href="">Module</a>
+                        <ul> 
+                            <li><a href="addModule.html">Add Module</a></li>
+                            <li><a href="viewmoduleforlec.php">Manage Module</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="">Exam</a>
+                        <ul> 
+                            <li><a href="addexams(base).php">Add Exam</a></li>
+                            <li><a href="viewexams2.php">Manage Exam</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="">GPA</a> 
+                        <ul> 
+                            <li><a href="gpaCal.php">Calculate GPA</a></li> 
+                        </ul> 
                     </li>
                     <li><a href="login.html">Log Out</a></li>
                 </ul>
@@ -80,12 +89,12 @@
             </form>
             </div>
         </div>
-        <div class = "footer">
+        <footer class="footer">
             <pre>
-                <img src="Images/Untitled_design__2_-removebg-preview.png" alt = "Institute logo">
-                <a href = "mailto:programes@nibm.lk">Contact Us</a>
-                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+                <img src="Images/logo.png" alt="Institute logo">
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
             </pre>
-        </div>
+        </footer>
     </body>
 </html>

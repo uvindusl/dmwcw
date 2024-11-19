@@ -31,25 +31,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                     <h1>STUDENT COURSE TRACKER</h1>
                 </div>
                 <nav>
-                    <ul>
-                        <li><a href="dashboardadmin.html">Dashboard</a></li>
-                        <li>
-                            <a href="addstudent.html">Student</a>
-                            <ul>
-                                <li><a href="addstudent.html">Add Students</a></li>
-                                <li><a href="viewStudent.php">Manage Students</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="addModule.html">Modules</a>
-                            <ul>
-                                <li><a href="addModule.html">Add Modules</a></li>
-                                <li><a href="viewmodule.php">Manage Modules</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="login.html">Log Out</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="dashboardstudent.html">Dashboard</a></li>
+                    <li> <a href="viewExam.php">Exam</a> 
+                        <ul> 
+                            <li><a href="viewExam.php">View Exam Dates</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="viewGpa.php">GPA</a> 
+                        <ul> 
+                            <li><a href="viewGpa.php">View GPA</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="">Module</a> 
+                        <ul> 
+                            <li><a href="viewmodule.php">view module</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
             </header>
 
     <div class="content">
@@ -61,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                         <th>Module number</th>
                         <th>Discription</th>
                         <th>Name</th>
-                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -75,14 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                             echo "<td>" . $row['MID'] . "</td>";
                             echo "<td>" . $row['MDiscription'] . "</td>";
                             echo "<td>" . $row['MName'] . "</td>";
-                            echo "<td class='actions'>
-                                <a href='module-update.php?id=" . $row['MID'] . "' class='btn update-btn'>Update</a>
-                                <form action='' method='POST' style='display: inline;'>
-                                    <input type='hidden' name='delete_id' value='" . $row['MID'] . "'>
-                                    <button type='submit' class='btn delete-btn'>Delete</button>
-                                </form>
-                              </td>";
-                            echo "</tr>";
                         }
                     } else {
                         echo "<tr><td colspan='4'>No records found</td></tr>";

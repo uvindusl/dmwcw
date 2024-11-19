@@ -1,139 +1,186 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-body{
-    font-family: Arial, sans-serif;
-    background-color: #001f3f;
-    color: white;
+header {
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 10px 20px;
     display: flex;
-    height: 100%;
-    margin: 0;
-    background-image: url(Images/hq720.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+    align-items: center;
+    justify-content: space-between;
 }
-.page{
+
+.logo {
     display: flex;
-    width: 100%;
+    align-items: center;
 }
-.sidebar {
-    background-color: #001f3f;
-    width: 20%;
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    text-align: center;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.content
+{
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.lotus img {
-    width: 200px;
-    margin-bottom: 20px;
-}
-.sidebar ul {
-    list-style: none;
-    width: 100%;
-}
-.sidebar ul li {
-    margin: 20px 0;
-}
-.sidebar ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-.sidebar ul li a:hover{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(84, 87, 248);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-.icon {
-    width: 50px; 
-    height: 50px;
-    margin-right: 10px;
-}
-
-.pagebody {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    flex-grow: 1;
-    padding: 50px;
-    display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100vh;             
-    flex-direction: column;   
-    overflow: hidden;
-}
-.pagebody h1 {
-    font-size: 36px;
-    margin: 0; 
+    text-align: center;
     
-    padding-top: 0.1cm;                
-    text-align: center;        
 }
-.lecdetails {
-    padding-top: 0.5cm;
-    padding: 50px;
-    display: flex;
-    justify-content: center;  
-    align-items: center;       
-    height: 100%;             
-    flex-direction: column;
-    width: 700px;
-    margin: 0;
-}
-.lecdetails label {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    align-self: flex-start;
+.fill
+{
+    padding: 40px;
+    border-radius: 8px;
+    width: 40%;
+    background: white;
+    color:#000000;
+    text-align: left;
 }
 
-.lecdetails input {
-    padding: 8px;
-    font-size: 16px;
-    width: 600px;
-    margin-bottom: 15px;
+.heading
+{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.lec-form label
+{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+.lec-form input
+{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
     border: none;
     outline: none;
-    border-bottom: 2px solid #fff;
-    color: white;
     background: transparent;
+    border-bottom: 2px solid #000000;
 }
 
-button {
-    font-size: 19px;
-    background: linear-gradient(to right, #fb48fe, #7c08e1);
-    color: white;
-    border-radius: 25px;
-    padding: 10px 10px;
-    width: 200px;
+.lec-form button
+{
+    background-image: linear-gradient(to right, #dd72a6,#9d208f );
+    color: #fff;
     border: none;
+    width: 3cm;
+    padding: 10px 20px;
+    border-radius: 20px;
     cursor: pointer;
-    align-self: flex-end;
+    align-self: flex-start;
     margin-top: 20px;
-    transition: 300ms;
+    margin-left: 290px;
 }
-button:hover{
-    font-size: 19px;
-    background: linear-gradient(to right, #fb48fe, #7c08e1);
+
+.lec-form button:hover
+{
+    background-image: linear-gradient(to right, #a359a0, #6141ac);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
     color: white;
-    border-radius: 25px;
-    padding: 10px 10px;
-    width: 220px;
-    border: none;
-    cursor: pointer;
-    align-self: flex-end;
-    margin-top: 20px;
-    transition: 300ms;
+    background-image: url(images2/newbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+footer {
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
+}
+

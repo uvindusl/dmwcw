@@ -7,9 +7,10 @@ if(isset($_POST['submit'])) {
     $lcno = $_POST['contactno'];
     $lemail = $_POST['email'];
     $laddress = $_POST['address'];
+    $lpassword = $_POST['password'];
     
 
-    $sql = "INSERT INTO lecturer (LName, LPhoneNum , LEmail , LAddress) VALUES ('$lname','$lcno' , '$lemail' , '$laddress')";
+    $sql = "INSERT INTO lecturer (LName, LPhoneNum , LEmail , LAddress, Password) VALUES ('$lname','$lcno' , '$lemail' , '$laddress', '$lpassword')";
 
     if(mysqli_query($conn, $sql)) {
         header("Location: AddLecture.html");

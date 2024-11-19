@@ -63,17 +63,17 @@ if ($module_id > 0) {
                     <ul>
                         <li><a href="dashboardadmin.html">Dashboard</a></li>
                         <li>
-                            <a href="addstudent.html">Student</a>
+                            <a href="">Student</a>
                             <ul>
                                 <li><a href="addstudent.html">Add Students</a></li>
                                 <li><a href="viewStudent.php">Manage Students</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="addModule.html">Modules</a>
+                            <a href="">Modules</a>
                             <ul>
                                 <li><a href="addModule.html">Add Modules</a></li>
-                                <li><a href="viewmodule.php">Manage Modules</a></li>
+                                <li><a href="viewmoduleforlec.php">Manage Modules</a></li>
                             </ul>
                         </li>
                         <li><a href="login.html">Log Out</a></li>

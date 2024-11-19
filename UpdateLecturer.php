@@ -41,6 +41,7 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
     <link rel="stylesheet" href="Updatelecture.css">
+    <script type="text/javascript" src="updatelecvalidate.js"></script>
 </head>
 <body>
 <header>
@@ -75,7 +76,7 @@ if(isset($_POST['submit'])){
             <div class = "heading">
             <h1>Update</h1>
             </div>
-            <form class="form" method="post" action="">
+            <form class="form" method="post" action="" name="lecd" onsubmit="return validate()">
 
                 <label for="name">Student Name</label><br>
                 <input type="text" id="lecname" name="lecname"  value="<?php echo $name; ?>">
@@ -93,8 +94,13 @@ if(isset($_POST['submit'])){
 
                 <button type="submit" name="submit">Update</button>
             </form>
+
+
+         
         </div>
+        
 </div>
+
 </div>
 
     

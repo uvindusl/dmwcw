@@ -151,3 +151,30 @@ nav ul li ul li a:hover
 body{
     background-image: url(images2/newbackground.png);
 }
+footer.footer {
+    padding-top: 2cm;
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

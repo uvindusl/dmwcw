@@ -1,6 +1,6 @@
 <?php
 
-include "conf.php";
+include "config3.php";
 
 $id = $_GET['id'];
 
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
         </div>
         <div class="login">
             <h1>Update</h1>
-            <form class="form" method="post" action="" onsubmit="updatelecvalidate.js">
+            <form class="form" method="post" action="">
 
                 <label for="name">Student Name</label>
                 <input type="text" id="StudentName" name="StudentName"  value="<?php echo $sname; ?>">
@@ -83,7 +83,6 @@ if(isset($_POST['submit'])){
                 <input type="tel" id="Contact" name="Contact" value="<?php echo $scontact; ?>">
 
                 <button type="submit" name="submit">Update</button>
-                <button>bla</button>
             </form>
         </div>
     </div>

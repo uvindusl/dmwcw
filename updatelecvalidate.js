@@ -1,29 +1,29 @@
 
 function validate()
 {
-    if(document.lecform.lecname.value == "")
+    if(document.lecd.lecname.value == "")
     {
         alert("Enter Lecture");
         return false;
     }   
 
-    if(document.lecform.contactno.value == "")
+    if(document.lecd.contactno.value == "")
     {
         alert("Enter contact number");
         return false;
     }  
-    if(document.lecform.email.value == "")
+    if(document.lecd.email.value == "")
         {
             alert("Enter email");
             return false;
         }  
 
-    if(document.lecform.address.value == "")
+    if(document.lecd.address.value == "")
     {
        alert("Enter address");
        return false;
     }  
-    if(document.lecform.password.value == "")
+    if(document.lecd.password.value == "")
         {
            alert("Enter password");
            return false;

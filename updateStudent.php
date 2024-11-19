@@ -1,6 +1,6 @@
 <?php
 
-include "config3.php";
+include "config.php";
 
 $id = $_GET['id'];
 
@@ -44,29 +44,36 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
+        <header>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
             </div>
-            <ul>
-                
-                <li><a href="#">
-                    <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="addstudent.html">
-                    <img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="#">
-                    <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                <li><a href="#">
-                    <img src="images/course.png" alt="Courses" class="icon">Courses</a></li>
-                <li><a href="#">
-                    <img src="images/exam.png" alt="exam" class="icon">Exams</a></li>
-                
-            </ul>
-        </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li>
+                        <a href="addstudent.html">Student</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="AddLecture.html">Lectures</a>
+                        <ul>
+                            <li><a href="AddLecture.html">Add Lectures</a></li>
+                            <li><a href="ViewLecture.php">Manage Lectures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="login">
-            <h1>Update</h1>
+            
             <form class="form" method="post" action="">
-
+                <h1>Update</h1>
                 <label for="name">Student Name</label>
                 <input type="text" id="StudentName" name="StudentName"  value="<?php echo $sname; ?>">
 
@@ -86,5 +93,12 @@ if(isset($_POST['submit'])){
             </form>
         </div>
     </div>
+    <div class = "footer">
+            <pre>
+                <img src="Images/logo.png" alt = "Institute logo">
+                <a href = "mailto:programes@nibm.lk">Contact Us</a>
+                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+        </div>
 </body>
 </html>

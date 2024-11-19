@@ -23,15 +23,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
 </head>
 <body>
     <div class="sidebar">
-        <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
-        <nav>
-            <ul>
-                <li><a href="dashboardlecuters.html"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href="viewStudentforlec.php"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                
-                <li><a href="viewmoduleforlec.php"><img src="Images/c.png"> Courses </a></li>
-            </ul>
-        </nav>
+    <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li>
+                        <a href="addstudent.html">Student</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="addModule.html">Modules</a>
+                        <ul>
+                            <li><a href="addModule.html">Add Modules</a></li>
+                            <li><a href="viewmodule.php">Manage Modules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <div class="content">
@@ -78,5 +95,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
             </table>
         </div>
     </div>
+    <footer class="footer">
+            <pre>
+                <img src="Images/logo.png" alt="Institute logo">
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+    </footer>
 </body>
 </html>

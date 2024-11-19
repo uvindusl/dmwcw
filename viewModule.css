@@ -6,72 +6,106 @@
     font-family: sans-serif;
 }
 
-body
+header 
 {
-    background-image: url(Images/bgimg.webp);
-    background-size: cover;
-}
-.sidebar
-{
-    width: 200px;
-    height: 100vh;
-    background-color:#390c57;
-    color: #ffff;
-    position: fixed;
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    justify-content: space-between;
 }
 
-.sidebar nav ul
+.logo 
 {
-    list-style: none;
-    width: 100%;
-}
-
-.sidebar nav ul li
-{
-    padding: 15px;
-    text-align: center;
     display: flex;
     align-items: center;
 }
 
-.sidebar nav ul li img
+.logo img
 {
-    width: 25px;
-    height: 25px;
-    margin-right: 14px;
+    width: 50px;
+    margin-right: 10px;
 }
 
-.sidebar nav ul li a
+.logo h1 
 {
-    padding-top: 20px;
-    text-decoration: none;
+    font-size: 18px;
     color: #fff;
-    font-size: 16px;
-    font-weight: bold;
+    margin: 0;
 }
 
-.sidebar nav ul li a:hover
+nav ul 
 {
-    color: rgb(0, 250, 229);
+    display: flex;
+    list-style: none;
+}
+
+nav ul li 
+{
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a 
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover 
+{
+    border-bottom: 2px solid #ffffff;
+}
+
+nav ul li ul 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul 
+{
+    display: block;
+}
+
+nav ul li ul li 
+{
+    text-align: center;
+}
+
+nav ul li ul li a 
+{
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav ul li ul li a:hover
+{
+    background-color: #f0f0f0;
+    color: black;
 }
 
 .content
 {
-    margin-left: 200px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #ffffff;
     align-items: center;
     text-align: center;
 }
 
 h1
 {
+    color:rgb(0, 0, 0);
     font-size: 45px;
     margin-top: 50px;
 }
@@ -94,7 +128,7 @@ table.centered {
 
 
 table.centered, table.centered th, table.centered td {
-    border: 1px solid white;
+    border: 1px solid rgb(30, 21, 21);
 }
 
 
@@ -108,7 +142,7 @@ table.centered th {
 }
 
 table.centered td {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 table.centered td.actions {
@@ -125,12 +159,55 @@ table.centered td.actions {
     border-radius: 4px;
     font-weight: bold;
     display: inline-block;
+    border: none; 
+    width: 90px; 
+    height: 40px; 
+    text-align: center;
+    cursor: pointer;
 }
 
 .update-btn {
-    background-image: linear-gradient(to right, green, rgba(26, 255, 0, 0.71));
+    background-image: linear-gradient(to right, #00c853, #76ff03);
 }
 
 .delete-btn {
-    background-image: linear-gradient(to right, red, rgb(181, 32, 32));
+    background-image: linear-gradient(to right, #d50000, #ff1744);
+}
+
+.update-btn:hover {
+    background-image: linear-gradient(to right, #76ff03, #00c853);
+}
+
+.delete-btn:hover {
+    background-image: linear-gradient(to right, #ff1744, #d50000);
+}
+
+.footer
+{
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a
+{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+.footer img
+{
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
 }

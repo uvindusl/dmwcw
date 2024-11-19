@@ -59,22 +59,41 @@ if ($exam_id > 0) {
     <link rel="stylesheet" href="addexams.css">
     <script type="text/javascript" src="addexams.js"></script>
 </head>
-<body style="background-image: url('Images/Abstract-Dark-Blue-Vector-Background-Graphics-10784211-1.jpg'); background-size: cover; background-position: center;">
-    <div class="sidebar">
-        <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
-        <nav>
-            <ul>
-                <li><a href=""><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href=""><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                <li><a href="addexams.html"><img src="Images/images-removebg-preview (3) (1)"> Exams </a></li>
-                <li><a href="addmodule.html"><img src="Images/c.png"> Modules </a></li>
-            </ul>
-        </nav>
-    </div>
+<body style="background-image: url('Images2/newbackground.png'); background-size: cover; background-position: center;">
+        <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li>
+                        <a href="addstudent.html">Student</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="addModule.html">Modules</a>
+                        <ul>
+                            <li><a href="addModule.html">Add Modules</a></li>
+                            <li><a href="viewmodule.php">Manage Modules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <div class="content">
+    <div class="fill">
+        <div class = "header">
         <h1>Update Exams</h1>
-        <div class="fill">
+        </div>
+
             <form class="exam-form" id="exam-form" method="post" action="updateexams.php?ExamID=<?php echo $exam_id; ?>" onsubmit="return Validate()">
                 <label for="exam-id">Exam ID</label></br>
                 <input type="text" id="exam-id" name="exam-id" value="<?php echo htmlspecialchars($exam_id); ?>" readonly></br></br>
@@ -94,6 +113,13 @@ if ($exam_id > 0) {
             </form>
         </div>
     </div>
+    <div class = "footer">
+            <pre>
+                <img src="Images/Untitled_design__2_-removebg-preview.png" alt = "Institute logo">
+                <a href = "mailto:programes@nibm.lk">Contact Us</a>
+                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+        </div>
 </body>
 </html>
 

@@ -4,25 +4,43 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title> Update Modules </title>
-        <link rel = "stylesheet" href = "addModuleStyle.css">
+        <link rel = "stylesheet" href = "module-update.css">
         <script type = "text/javascript" src = "addModule.js"></script>
     </head>
-    <body style="background-image: url('Images/bgimg.webp'); background-size: cover; background-position: center;">
-        <div class = "sidebar">
-            <img src = "Images/Untitled_design__2_-removebg-preview.png" width="100px">
-            <nav>
-                <ul>
-                    <li><a href = "dashbord.html"><img src = "Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                    <li><a href = "viewStudent.php"><img src = "Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                    <li><a href = ""><img src = "Images/download-removebg-preview (6) (1).png"> Lecturer </a></li>
-                    <li><a href = "viewmodule.php"><img src = "Images/c.png"> Modules </a></li>
-                </ul>
-            </nav>
-        </div>
+    <body style="background-image: url('Images2/newbackground.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <h1>STUDENT COURSE TRACKER</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="dashboardadmin.html">Dashboard</a></li>
+                        <li>
+                            <a href="addstudent.html">Student</a>
+                            <ul>
+                                <li><a href="addstudent.html">Add Students</a></li>
+                                <li><a href="viewStudent.php">Manage Students</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="addModule.html">Modules</a>
+                            <ul>
+                                <li><a href="addModule.html">Add Modules</a></li>
+                                <li><a href="viewmodule.php">Manage Modules</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html">Log Out</a></li>
+                    </ul>
+                </nav>
+            </header>
 
         <div class = "content">
-            <h1> Update Module </h1>
             <div class = "fill">
+                <div class = "heading">
+            <h1> Update Module </h1>
+                </div>
             <form class = "module-form" id = "module-form" method="post" action="module-update.php" onsubmit="return Validate()">
                     <label for="module-id">Module ID</label></br>
                     <input type="text" id="module-id" name="module-id"></br></br>
@@ -33,6 +51,13 @@
                 <button type = "submit">Update Module</button>
             </form>
             </div>
+        </div>
+        <div class = "footer">
+            <pre>
+                <img src="Images/Untitled_design__2_-removebg-preview.png" alt = "Institute logo">
+                <a href = "mailto:programes@nibm.lk">Contact Us</a>
+                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
         </div>
     </body>
 </html>

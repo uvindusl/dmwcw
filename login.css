@@ -1,24 +1,40 @@
 form
 {
-    font-family: Arial, sans-serif;color: white;
+    font-family: Arial, sans-serif;color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 25px;
     padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
 }
-
-form input
+form .Username
+{
+    padding-right: 280px;
+}
+form .password
+{
+    padding-right: 280px;
+}
+form input[type="text"], 
+form input[type="password"]
 {
     border: none;
     outline: none;
     background: transparent;
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: left;
 }
 
+form input[type = "radio"]
+{
+    margin: 0 5px;
+}
 .btnlogin
 {
-    background: linear-gradient(to right, #800080, #000000) ;
+    font-weight: bold;
+    background: linear-gradient(to right, #040d48, #0022ff) ;
     color: white;
     border-radius: 15px;
     height: 30px;
@@ -28,13 +44,20 @@ form input
 }
 .btnlogin:hover
 {
-    background: linear-gradient(to right, #ff0000, #b700ff) ;
+    background: linear-gradient(to right, #0050b3, #00aeff) ;
     transform: scale(1.05);
 
 }
 
+h1
+{
+    padding-bottom: 15px;
+    margin:0;
+}
+
 .Username
 {
+    margin-top: 10px;;
     padding-right: 95px;
 }
 
@@ -56,16 +79,26 @@ form input
 
 body
 {
-    padding-top: 150px;
-    background-image: url("images/imageback.png") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-image: url("images2/Untitled\ design\ \(2\).jpg") ;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-body div 
+.loginform
 {
-    background-image: url("images/Untitled image (1).png");
-    background-size: 480px,680px;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 40px;
+    border-radius: 18px;
+    width: 100%;
+    background: white;
+    color:#000000;
+    text-align: center;
+}
+
+img
+{
+    width: 150px;
 }

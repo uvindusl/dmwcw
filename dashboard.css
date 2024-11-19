@@ -107,9 +107,9 @@ footer {
     margin-right: 20px;
     bottom: 0;
     width: 100%;
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 footer img {
@@ -128,29 +128,29 @@ footer  a:hover {
     text-decoration: underline;
 }
 .about {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     height: 50vh;
     text-align: center; 
-    background: linear-gradient(to bottom, #ffffff, #d3e0fa); /* Add gradient background */
+    background: linear-gradient(to bottom, #ffffff, #d3e0fa);
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px;
 }
 
 .about h1 {
-    font-size: 36px; /* Larger heading */
-    color: #3231c4; /* Theme color */
-    margin-bottom: 20px; /* Add spacing below heading */
+    font-size: 36px;
+    color: #3231c4; 
+    margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 18px; /* Text size */
-    color: #333; /* Subtle text color */
-    max-width: 600px; /* Limit text width */
-    line-height: 1.6; /* Improve readability */
+    font-size: 18px; 
+    color: #333; 
+    max-width: 600px; 
+    line-height: 1.6; 
 }
 

@@ -33,6 +33,7 @@ form input[type = "radio"]
 }
 .btnlogin
 {
+    font-weight: bold;
     background: linear-gradient(to right, #040d48, #0022ff) ;
     color: white;
     border-radius: 15px;

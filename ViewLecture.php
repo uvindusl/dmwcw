@@ -17,14 +17,14 @@
                 <ul>
                     <li><a href="dashboardadmin.html">Dashboard</a></li>
                     <li>
-                        <a href="addstudent.html">Student</a>
+                        <a href="">Student</a>
                         <ul>
                             <li><a href="addstudent.html">Add Students</a></li>
                             <li><a href="viewStudent.php">Manage Students</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="AddLecture.html">Lectures</a>
+                        <a href="">Lectures</a>
                         <ul>
                             <li><a href="AddLecture.html">Add Lectures</a></li>
                             <li><a href="ViewLecture.php">Manage Lectures</a></li>

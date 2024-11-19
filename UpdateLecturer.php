@@ -53,17 +53,17 @@ if(isset($_POST['submit'])){
             <ul>
                 <li><a href="dashboardadmin.html">Dashboard</a></li>
                 <li>
-                    <a href="addstudent.html">Student</a>
+                    <a href="">Student</a>
                     <ul>
                         <li><a href="addstudent.html">Add Students</a></li>
                         <li><a href="viewStudent.php">Manage Students</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="addModule.html">Modules</a>
+                    <a href="">Modules</a>
                     <ul>
                         <li><a href="addModule.html">Add Modules</a></li>
-                        <li><a href="viewmodule.php">Manage Modules</a></li>
+                        <li><a href="viewmoduleforlec.php">Manage Modules</a></li>
                     </ul>
                 </li>
                 <li><a href="login.html">Log Out</a></li>
@@ -100,7 +100,13 @@ if(isset($_POST['submit'])){
         </div>
         
 </div>
-
+<footer class="footer">
+        <pre>
+            <img src="Images/logo.png" alt="Institute logo">
+            <a href="mailto:programes@nibm.lk">Contact Us</a>
+            or call +94 75 468 3291  |  &copy; 2024 DUTH College
+        </pre>
+    </footer>
 </div>
 
     

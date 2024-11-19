@@ -1,5 +1,11 @@
-header 
+*
 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header {
     background: linear-gradient(to right, #000000, #3533cd);
     padding: 10px 20px;
     display: flex;
@@ -7,51 +13,42 @@ header
     justify-content: space-between;
 }
 
-.logo 
-{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo img
-{
+.logo img {
     width: 50px;
     margin-right: 10px;
 }
 
-.logo h1 
-{
+.logo h1 {
     font-size: 18px;
-    color: #fff;
 }
 
-nav ul 
-{
+nav ul {
     display: flex;
     list-style: none;
 }
 
-nav ul li 
-{
+nav ul li {
     position: relative;
     margin-right: 20px;
 }
 
-nav ul li a 
-{
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     padding: 10px 15px;
 }
 
-nav ul li a:hover 
-{
+nav ul li a:hover {
     border-bottom: 2px solid #ffffff;
 }
 
-nav ul li ul 
-{
+nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -61,25 +58,21 @@ nav ul li ul
     padding: 10px 0;
 }
 
-nav ul li:hover ul 
-{
+nav ul li:hover ul {
     display: block;
 }
 
-nav ul li ul li 
-{
+nav ul li ul li {
     text-align: center;
 }
 
-nav ul li ul li a 
-{
+nav ul li ul li a {
     display: block;
     padding: 10px 20px;
     font-size: 14px;
 }
 
-nav ul li ul li a:hover
-{
+nav ul li ul li a:hover {
     background-color: #f0f0f0;
     color: black;
 }
@@ -148,29 +141,31 @@ nav ul li ul li a:hover
     background-image: linear-gradient(to right, #a359a0, #6141ac);
 }
 
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: white;
     background-image: url(images2/newbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-footer.footer {
-    padding-top: 2cm;
+
+footer {
     background-image: linear-gradient(to right, #000000, #3533cd);
     color: #fff;
     text-align: center;
     padding: 5px 10px;
+    margin-top: 5px;
     position: relative;
+    margin-right: 20px;
     bottom: 0;
     width: 100%;
-    
-}
-
-footer .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .footer a:hover {
-    text-decoration: underline;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 footer img {
@@ -178,3 +173,14 @@ footer img {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
+}
+

@@ -5,36 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+
+    
 </head>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#logo").hide();
+            $("#about").hide();
+            $("#image").hide();
+            $("#logo").show("slow");
+            $("#about").show("slow");
+            $("#image").show("slow");
+        });
+</script>
 <body>
     <div class="content">
         <header>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
-                <h1>STUDENT COURSE TRACKER</h1>
+                <h1 id="logo">STUDENT COURSE TRACKER</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="dashboardlecuters.html">Dashboard</a></li>
                     <li><a href="#about">About</a></li>
                     <li> <a href="#">Student</a> 
                         <ul> 
                             <li><a href="viewStudentforlec.php">View Students</a></li> 
                         </ul> 
                     </li>
-                    <li><a href="addModule.html">Module</a>
+                    <li><a href="">Module</a>
                         <ul> 
                             <li><a href="addModule.html">Add Module</a></li>
                             <li><a href="viewmoduleforlec.php">Manage Module</a></li> 
                         </ul> 
                     </li>
-                    <li><a href="addexams(base).php">Exam</a>
+                    <li><a href="">Exam</a>
                         <ul> 
                             <li><a href="addexams(base).php">Add Exam</a></li>
                             <li><a href="viewexams2.php">Manage Exam</a></li> 
                         </ul> 
                     </li>
-                    <li> <a href="gpaCal.php">GPA</a> 
+                    <li> <a href="">GPA</a> 
                         <ul> 
                             <li><a href="gpaCal.php">Calculate GPA</a></li> 
                         </ul> 
@@ -43,7 +56,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="hello">
+        <div class="hello" id="image">
             <img src="images2/Untitled design.png" alt="Students" class="hello-image">
         </div>
         <div class="about">

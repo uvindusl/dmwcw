@@ -15,20 +15,21 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="dashboardadmin.html">Dashboard</a></li>
-                    <li>
-                        <a href="addstudent.html">Student</a>
-                        <ul>
-                            <li><a href="addstudent.html">Add Students</a></li>
-                            <li><a href="viewStudent.php">Manage Students</a></li>
-                        </ul>
+                    <li><a href="dashboardstudent.html">Dashboard</a></li>
+                    <li> <a href="viewExam.php">Exam</a> 
+                        <ul> 
+                            <li><a href="viewExam.php">View Exam Dates</a></li> 
+                        </ul> 
                     </li>
-                    <li>
-                        <a href="addModule.html">Modules</a>
-                        <ul>
-                            <li><a href="addModule.html">Add Modules</a></li>
-                            <li><a href="viewmodule.php">Manage Modules</a></li>
-                        </ul>
+                    <li> <a href="viewGpa.php">GPA</a> 
+                        <ul> 
+                            <li><a href="viewGpa.php">View GPA</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="">Module</a> 
+                        <ul> 
+                            <li><a href="viewmodule.php">view module</a></li> 
+                        </ul> 
                     </li>
                     <li><a href="login.html">Log Out</a></li>
                 </ul>

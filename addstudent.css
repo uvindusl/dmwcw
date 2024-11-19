@@ -166,32 +166,34 @@ button {
 button:hover {
     background: linear-gradient(to right, #0d34e9, #38a2d8);
 }
-.footer
-{
+footer {
     background-image: linear-gradient(to right, #000000, #3533cd);
     color: #fff;
     text-align: center;
     padding: 5px 10px;
-    position: fixed;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 20px;
     bottom: 0;
     width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.footer a
-{
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.footer a:hover
-{
+footer  a:hover {
     text-decoration: underline;
 }
 
-.footer img
-{
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 5px;
-}

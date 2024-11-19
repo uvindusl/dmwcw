@@ -1,4 +1,11 @@
-header 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}header 
 {
     background: linear-gradient(to right, #000000, #3533cd);
     padding: 10px 20px;
@@ -22,7 +29,6 @@ header
 .logo h1 
 {
     font-size: 18px;
-    color: #fff;
 }
 
 nav ul 
@@ -148,33 +154,44 @@ nav ul li ul li a:hover
     background-image: linear-gradient(to right, #a359a0, #6141ac);
 }
 
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: white;
     background-image: url(images2/newbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-footer.footer {
-    padding-top: 2cm;
+footer {
     background-image: linear-gradient(to right, #000000, #3533cd);
     color: #fff;
     text-align: center;
     padding: 5px 10px;
+    margin-top: 5px;
     position: relative;
+    margin-right: 20px;
     bottom: 0;
     width: 100%;
-    
-}
-
-footer .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .footer a:hover {
-    text-decoration: underline;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 footer img {
     height: 25px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
 }

@@ -161,7 +161,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="dashboardlecuters.html">Dashboard</a></li>
                     <li><a href="#dataTable" id="navtable">Table</a></li>
                     <li> <a href="#">Student</a> 
                         <ul> 

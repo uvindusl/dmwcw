@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     }
 }
 
-$module_id = isset($_GET['MID']) ? intval($_GET['MID']) : 0;
+$module_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $module_name = '';
 $description = '';
 

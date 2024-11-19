@@ -8,7 +8,7 @@
 
 body
 {
-    background-image: url(images2/newbackground.png);
+    background-image: url(images2/gray.jpg);
     background-size: cover;
 }
 
@@ -141,7 +141,7 @@ nav ul li ul li a:hover
     border: none;
     outline: none;
     background: transparent;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
 }
 .form1 select option
 {

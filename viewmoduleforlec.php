@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root"; 
 $password = ""; 
@@ -22,18 +23,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     <link rel="stylesheet" href="viewModule.css">
 </head>
 <body>
-    <div class="sidebar">
-        <img src="Images/Untitled_design__2_-removebg-preview.png" width="100px">
-        <nav>
-            <ul>
-                <li><a href="dashboardlecuters.html#"><img src="Images/download-removebg-preview (4) (1).png"> Dashboard </a></li>
-                <li><a href="viewStudentforlec.php#"><img src="Images/download-removebg-preview (5) (1).png"> Students </a></li>
-                
-                <li><a href="viewmoduleforlec.php#"><img src="Images/c.png"> Modules </a></li>
-                <li><a href="addModule.html"><img src="Images/c.png">Add Modules </a></li>
-            </ul>
-        </nav>
-    </div>
+<body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <h1>STUDENT COURSE TRACKER</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="dashboardadmin.html">Dashboard</a></li>
+                        <li>
+                            <a href="addstudent.html">Student</a>
+                            <ul>
+                                <li><a href="addstudent.html">Add Students</a></li>
+                                <li><a href="viewStudent.php">Manage Students</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="addModule.html">Modules</a>
+                            <ul>
+                                <li><a href="addModule.html">Add Modules</a></li>
+                                <li><a href="viewmodule.php">Manage Modules</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html">Log Out</a></li>
+                    </ul>
+                </nav>
+            </header>
 
     <div class="content">
         <h1>Update & Delete Modules</h1>
@@ -59,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                             echo "<td>" . $row['MDiscription'] . "</td>";
                             echo "<td>" . $row['MName'] . "</td>";
                             echo "<td class='actions'>
-                                <a href='module-update.html?id=" . $row['MID'] . "' class='btn update-btn'>Update</a>
+                                <a href='module-update.php?id=" . $row['MID'] . "' class='btn update-btn'>Update</a>
                                 <form action='' method='POST' style='display: inline;'>
                                     <input type='hidden' name='delete_id' value='" . $row['MID'] . "'>
                                     <button type='submit' class='btn delete-btn'>Delete</button>
@@ -76,6 +93,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                 </tbody>
             </table>
         </div>
+    </div>
+    <div class = "footer">
+            <pre>
+                <img src="Images/Untitled_design__2_-removebg-preview.png" alt = "Institute logo">
+                <a href = "mailto:programes@nibm.lk">Contact Us</a>
+                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
     </div>
 </body>
 </html>

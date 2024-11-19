@@ -3,6 +3,21 @@
 <head>
     <title>Calculate GPA</title>
     <link rel="stylesheet" href="gpaCalStyle.css">
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#navtable").hide();
+                $("#dataTable").hide();
+                $("#button1").click(function() {
+                    $("#dataTable").show("slow");
+                    $("#navtable").show("slow");
+                });
+                
+                
+            });
+        </script>
+
     <script>
         
         function calcGrade() 
@@ -139,19 +154,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
+    <header>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="dashboardlecuters.html#"><img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                    <li><a href="viewStudentforlec.php"><img src="images/student.png" alt="student" class="icon">Students</a></li>
-                    
-                    <li><a href="viewmoduleforlec.php"><img src="images/course.png" alt="Courses" class="icon">Modules</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#dataTable" id="navtable">Table</a></li>
+                    <li> <a href="#">Student</a> 
+                        <ul> 
+                            <li><a href="viewStudentforlec.php">View Students</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="addModule.html">Module</a>
+                        <ul> 
+                            <li><a href="addModule.html">Add Module</a></li>
+                            <li><a href="viewmoduleforlec.php">Manage Module</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="addexams(base).php">Exam</a>
+                        <ul> 
+                            <li><a href="addexams(base).php">Add Exam</a></li>
+                            <li><a href="viewexams2.php">Manage Exam</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="gpaCal.php">GPA</a> 
+                        <ul> 
+                            <li><a href="gpaCal.php">Calculate GPA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
                 </ul>
-             </nav>
-        </div>
+            </nav>
+        </header>
         <div class="form">
             <h1>Calculate Student GPA</h1>
             <?php
@@ -203,7 +240,7 @@
                 <input type="hidden" id="tableData" name="tableData"> <!-- Hidden input for table data -->
                 <input type="hidden" id="GPAInput" name="GPAInput">
 
-                <button type="button" onclick="addToTable()">Add to Table</button>
+                <button type="button" onclick="addToTable()" id="button1">Add to Table</button>
                 <button type="submit">Save</button><br><br>
 
                 <strong>GPA: </strong>
@@ -236,6 +273,13 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <pre>
+                <img src="Images/logo.png" alt="Institute logo">
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+        </footer>
     </div>
 </body>
 </html>

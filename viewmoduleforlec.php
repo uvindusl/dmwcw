@@ -31,25 +31,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
                     <h1>STUDENT COURSE TRACKER</h1>
                 </div>
                 <nav>
-                    <ul>
-                        <li><a href="dashboardadmin.html">Dashboard</a></li>
-                        <li>
-                            <a href="addstudent.html">Student</a>
-                            <ul>
-                                <li><a href="addstudent.html">Add Students</a></li>
-                                <li><a href="viewStudent.php">Manage Students</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="addModule.html">Modules</a>
-                            <ul>
-                                <li><a href="addModule.html">Add Modules</a></li>
-                                <li><a href="viewmodule.php">Manage Modules</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="login.html">Log Out</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li> <a href="#">Student</a> 
+                        <ul> 
+                            <li><a href="viewStudentforlec.php">View Students</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="addModule.html">Module</a>
+                        <ul> 
+                            <li><a href="addModule.html">Add Module</a></li>
+                            <li><a href="viewmoduleforlec.php">Manage Module</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="addexams(base).php">Exam</a>
+                        <ul> 
+                            <li><a href="addexams(base).php">Add Exam</a></li>
+                            <li><a href="viewexams2.php">Manage Exam</a></li> 
+                        </ul> 
+                    </li>
+                    <li> <a href="gpaCal.php">GPA</a> 
+                        <ul> 
+                            <li><a href="gpaCal.php">Calculate GPA</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
             </header>
 
     <div class="content">

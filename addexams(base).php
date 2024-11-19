@@ -53,7 +53,7 @@
                     $uname = "root";
                     $pass = "";
                     $dbname = "dmw_cw";
-                    $conn = mysqli_connect($sname, $uname, $pass, $dbname, 3307);
+                    $conn = mysqli_connect($sname, $uname, $pass, $dbname);
 
                     $sql1 = "SELECT MName FROM module";
                     $result1 = mysqli_query($conn, $sql1);

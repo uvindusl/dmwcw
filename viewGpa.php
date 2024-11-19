@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViewGPA</title>
-    <link rel="StyleSheet" type="text/css" href="viewExamStyles.css">
+    <link rel="StyleSheet" type="text/css" href="viewexams2.css">
 </head>
 <body class="Gpa">
 <div class="container">
-        <div class="sidebar">
+<header>
             <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-                </div>
+                <img src="images/logo.png" alt="Logo">
+                <h1>STUDENT COURSE TRACKER</h1>
+            </div>
+            <nav>
                 <ul>
-                    <li><a href="dashboardstudent.html">
-                        <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                    <li><a href="viewExam.php">
-                        <img src="Images/exams.png" alt="exam" class="icon">Exams</a>
-                    </li>  
-                    <li><a href="viewGpa.php">
-                        <img src="images/download.png" alt="gpa" class="icon">GPA</a>
-                    </li> 
-                    <li><a href="login.html">
-                        <img src="images/download.png" alt="gpa" class="icon">log out</a>
-                    </li> 
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li>
+                        <a href="addstudent.html">Student</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="addModule.html">Modules</a>
+                        <ul>
+                            <li><a href="addModule.html">Add Modules</a></li>
+                            <li><a href="viewmodule.php">Manage Modules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
                 </ul>
-        </div>
+            </nav>
+        </header>
         <div class="view">
             <h1>GPA</h1>
             <?php
@@ -66,6 +74,13 @@
             HTML;
             ?>
         </div>
+        <footer class="footer">
+            <pre>
+                <img src="Images/logo.png" alt="Institute logo">
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
+            </pre>
+    </footer>
     </div>
 </body>
 </html>

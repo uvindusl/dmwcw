@@ -50,7 +50,7 @@ form input[type = "radio"]
 
 h1
 {
-    padding: 0;
+    padding-bottom: 15px;
     margin:0;
 }
 
@@ -83,7 +83,7 @@ body
     align-items: center;
     height: 100vh; 
     margin: 0;
-    background-image: url("images2/newbackground2.png") ;
+    background-image: url("images2/Untitled\ design\ \(2\).jpg") ;
     background-size: cover;
 }
 
@@ -95,4 +95,9 @@ body
     background: white;
     color:#000000;
     text-align: center;
+}
+
+img
+{
+    width: 150px;
 }

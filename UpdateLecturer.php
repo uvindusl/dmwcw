@@ -40,46 +40,69 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
-    <link rel="stylesheet" href="addstudent.css">
+    <link rel="stylesheet" href="Updatelecture.css">
+    <script type="text/javascript" src="updatelecvalidate.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo">
-            </div>
-            <ul>
-                
-                <li><a href="dashboardadmin.html">
-                    <img src="images/dashboard.png" alt="dash" class="icon">Dashboard</a></li>
-                <li><a href="addstudent.html">
-                    <img src="images/student.png" alt="student" class="icon">Students</a></li>
-                <li><a href="AddLecture.html">
-                    <img src="images/lectures.png" alt="lectures" class="icon">Lecturers</a></li>
-                
-            </ul>
+<header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <h1>STUDENT COURSE TRACKER</h1>
         </div>
-        <div class="login">
+        <nav>
+            <ul>
+                <li><a href="dashboardadmin.html">Dashboard</a></li>
+                <li>
+                    <a href="addstudent.html">Student</a>
+                    <ul>
+                        <li><a href="addstudent.html">Add Students</a></li>
+                        <li><a href="viewStudent.php">Manage Students</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="addModule.html">Modules</a>
+                    <ul>
+                        <li><a href="addModule.html">Add Modules</a></li>
+                        <li><a href="viewmodule.php">Manage Modules</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <div class="content">
+        <div class = "fill">
+            <div class = "heading">
             <h1>Update</h1>
-            <form class="form" method="post" action="">
+            </div>
+            <form class="form" method="post" action="" name="lecd" onsubmit="return validate()">
 
-                <label for="name">Student Name</label>
+                <label for="name">Student Name</label><br>
                 <input type="text" id="lecname" name="lecname"  value="<?php echo $name; ?>">
 
-                <label for="contact">Contact</label>
+                <label for="contact">Contact</label><br>
                 <input type="tel" id="contact" name="contact" value="<?php echo $cnt; ?>">
 
-                <label for="email">Email</label>
+                <label for="email">Email</label><br>
                 <input type="email" id="email" name="email"  value="<?php echo $email; ?>">
 
-                <label for="address">Address</label>
+                <label for="address">Address</label><br>
                 <input type="text" id="address" name="address"  value="<?php echo $address; ?>">
 
                 
 
                 <button type="submit" name="submit">Update</button>
             </form>
+
+
+         
         </div>
-    </div>
+        
+</div>
+
+</div>
+
+    
 </body>
 </html>

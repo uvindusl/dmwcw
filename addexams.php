@@ -4,7 +4,7 @@ $uname = "root";
 $pass = "";
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($sname, $uname, $pass, $dbname);
+$conn = mysqli_connect($sname, $uname, $pass, $dbname,3307);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

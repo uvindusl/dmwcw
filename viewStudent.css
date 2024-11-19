@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -14,6 +13,9 @@ body {
     margin: 0;
     width: 100%;
     overflow-y: auto;
+    background-image: url(images2/gray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -21,15 +23,15 @@ body {
     flex-direction: column;
     flex: 1;
     width: 100%;
-    background-color: white;
+
 }
 
 header {
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(to right, #020207, #3231c4);
+    justify-content: space-between;
     color: #fff;
 }
 
@@ -101,7 +103,6 @@ nav ul li ul li a:hover {
     flex: 1;
     padding: 30px;
     margin-left: 0;
-    background-color: #fff;
     text-align: center;
 }
 
@@ -126,8 +127,8 @@ table.centered {
 }
 
 table.centered th {
-    background-color: #68cce8;
-    color: #000;
+    background-color: #030093;
+    color: white;
     padding: 10px;
     font-weight: bold;
 }
@@ -182,3 +183,34 @@ footer img {
     vertical-align: middle;
     margin-right: 5px;
 }
+footer {
+    background-image: linear-gradient(to right, #000000, #3533cd);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer img {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer  a:hover {
+    text-decoration: underline;
+}
+

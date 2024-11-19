@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViewGPA</title>
-    <link rel="StyleSheet" type="text/css" href="viewexams2.css">
+    <link rel="StyleSheet" type="text/css" href="viewGpa.css">
 </head>
 <body class="Gpa">
 <div class="container">

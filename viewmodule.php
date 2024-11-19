@@ -5,7 +5,7 @@ $username = "root";
 $password = ""; 
 $dbname = "dmw_cw";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname,3307);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     $id = intval($_POST['delete_id']);
@@ -94,12 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
             </table>
         </div>
     </div>
-    <div class = "footer">
+   <footer class="footer">
             <pre>
-                <img src="Images/Untitled_design__2_-removebg-preview.png" alt = "Institute logo">
-                <a href = "mailto:programes@nibm.lk">Contact Us</a>
-                or with +94 75 468 3291  |  &copy; 2024 DUTH College
+                <img src="Images/logo.png" alt="Institute logo">
+                <a href="mailto:programes@nibm.lk">Contact Us</a>
+                or call +94 75 468 3291  |  &copy; 2024 DUTH College
             </pre>
-    </div>
+    </footer>
 </body>
 </html>

@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
     </div>
 
     <div class="content">
-        <h1>Update & Delete Exams</h1>
+        <h1>View Exams</h1>
         <div class="table1">
             <table class="table centered">
                 <thead>

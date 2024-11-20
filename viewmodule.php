@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update and Delete Modules</title>
+    <title>View Modules</title>
     <link rel="stylesheet" href="viewModule.css">
 </head>
 <body>
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_id'])) {
             </header>
 
     <div class="content">
-        <h1>Update & Delete Modules</h1>
+        <h1>View Modules</h1>
         <div class="table1">
             <table class="table centered">
                 <thead>

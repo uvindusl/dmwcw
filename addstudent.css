@@ -123,7 +123,7 @@ nav ul li ul li a:hover {
 }
 
 .form {
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -170,12 +170,13 @@ button {
 button:hover {
     background: linear-gradient(to right, #0d34e9, #38a2d8);
 }
+
 footer {
     background-image: linear-gradient(to right, #000000, #3533cd);
     color: #fff;
     text-align: center;
     padding: 5px 10px;
-    margin-top: 5px;
+    margin-top: 30px;
     position: relative;
     margin-right: 20px;
     bottom: 0;
@@ -200,4 +201,5 @@ footer a {
 footer  a:hover {
     text-decoration: underline;
 }
+
 

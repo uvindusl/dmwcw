@@ -50,35 +50,33 @@ if(isset($_POST['submit'])){
             <h1>STUDENT COURSE TRACKER</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="dashboardadmin.html">Dashboard</a></li>
-                <li>
-                    <a href="">Student</a>
-                    <ul>
-                        <li><a href="addstudent.html">Add Students</a></li>
-                        <li><a href="viewStudent.php">Manage Students</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Modules</a>
-                    <ul>
-                        <li><a href="addModule.html">Add Modules</a></li>
-                        <li><a href="viewmoduleforlec.php">Manage Modules</a></li>
-                    </ul>
-                </li>
-                <li><a href="login.html">Log Out</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="dashboardadmin.html">Dashboard</a></li>
+                    <li><a href="#">Students</a>
+                        <ul>
+                            <li><a href="addstudent.html">Add Students</a></li>
+                            <li><a href="viewStudent.php">Manage Students</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lecturers</a>
+                        <ul>
+                            <li><a href="AddLecture.html">Add Lectures</a></li>
+                            <li><a href="ViewLecture.php">Manage Lectures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </nav>
     </header>
         
         <div class="content">
         <div class = "fill">
             <div class = "heading">
-            <h1>Update</h1>
+            <h1>Update Lecturer</h1>
             </div>
             <form class="form" method="post" action="" name="lecd" onsubmit="return validate()">
 
-                <label for="name">Student Name</label><br>
+                <label for="name">Lecturer Name</label><br>
                 <input type="text" id="lecname" name="lecname"  value="<?php echo $name; ?>">
 
                 <label for="contact">Contact</label><br>

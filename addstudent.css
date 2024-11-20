@@ -130,6 +130,7 @@ nav ul li ul li a:hover {
     max-width: 500px;
     background: white;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .form label {

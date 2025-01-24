@@ -109,7 +109,7 @@ This project was collaboratively developed by the following team members:
 
 ## License
 
-This project is licensed under the [MIT License](https://chatgpt.com/c/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
